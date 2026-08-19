@@ -1,0 +1,74 @@
+/* games/snake/snake.css */
+.snake-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+#snake-canvas {
+    background-color: #f8fafc; /* brand-50 */
+    border: 2px solid #bae6fd;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.04);
+    max-width: 100%;
+    max-height: 50vh;
+    touch-action: none; /* prevent scrolling when swiping */
+}
+
+.snake-score-board {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    color: #0369a1; /* brand-700 */
+}
+
+/* Mobile Controls */
+.snake-controls {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
+    margin-top: 1rem;
+    width: 100%;
+    max-width: 250px;
+}
+.snake-btn {
+    background-color: #0ea5e9;
+    color: white;
+    border-radius: 12px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 6px -1px rgba(14, 165, 233, 0.2);
+}
+.snake-btn:active {
+    transform: scale(0.95);
+    background-color: #0284c7;
+}
+.snake-up { grid-column: 2; }
+.snake-left { grid-column: 1; }
+.snake-right { grid-column: 3; }
+.snake-down { grid-column: 2; }
+
+/* Overlay */
+#snake-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(255, 255, 255, 0.8);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(4px);
+    z-index: 10;
+}

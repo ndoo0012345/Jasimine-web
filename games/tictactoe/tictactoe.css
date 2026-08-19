@@ -1,0 +1,58 @@
+/* games/tictactoe/tictactoe.css */
+.ttt-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    box-sizing: border-box;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+.ttt-header {
+    margin-bottom: 1rem;
+    text-align: center;
+}
+.ttt-board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+    background: #94a3b8;
+    padding: 8px;
+    border-radius: 16px;
+    width: 100%;
+    max-width: 350px;
+    aspect-ratio: 1;
+    position: relative;
+}
+.ttt-cell {
+    background: #f8fafc;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+    font-weight: 900;
+    cursor: pointer;
+    transition: background 0.2s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+.ttt-cell:active {
+    background: #e2e8f0;
+}
+.ttt-cell.x { color: #0ea5e9; } /* brand-500 */
+.ttt-cell.o { color: #f43f5e; } /* rose-500 */
+.ttt-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(255, 255, 255, 0.85);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(4px);
+    z-index: 10;
+    border-radius: 16px;
+}

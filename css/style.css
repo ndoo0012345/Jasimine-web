@@ -1,0 +1,134 @@
+/* =============================================================
+   ANGELICA JASMINE KARTAWINATA — GLOBAL STYLES
+   Custom CSS (Tailwind utilities are handled by CDN)
+   ============================================================= */
+
+/* ── GLASS NAV ── */
+.glass-nav {
+    background: rgba(255, 255, 255, 0.88);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+}
+
+/* ── GLASS MUSIC PLAYER ── */
+.glass-player {
+    background: linear-gradient(135deg,
+        rgba(15, 23, 42, 0.96) 0%,
+        rgba(7, 89, 133, 0.92) 100%);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+}
+
+/* ── VINYL SPIN ANIMATION ── */
+@keyframes vinyl-spin {
+    from { transform: rotate(0deg); }
+    to   { transform: rotate(360deg); }
+}
+
+.animate-vinyl-spin {
+    animation: vinyl-spin 3s linear infinite;
+}
+
+.animate-vinyl-paused {
+    animation: vinyl-spin 3s linear infinite;
+    animation-play-state: paused;
+}
+
+/* ── FADE IN ── */
+@keyframes fade-in {
+    from { opacity: 0; transform: translateY(8px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+    animation: fade-in 0.25s ease-out;
+}
+
+/* ── MUSIC SLIDER (Progress + Volume) ── */
+.music-slider {
+    -webkit-appearance: none;
+    appearance: none;
+    height: 4px;
+    border-radius: 9999px;
+    outline: none;
+    cursor: pointer;
+    /* Gradient fill from left using CSS variable --progress */
+    background: linear-gradient(
+        to right,
+        #38bdf8 0%,
+        #38bdf8 var(--progress, 0%),
+        rgba(255,255,255,0.15) var(--progress, 0%),
+        rgba(255,255,255,0.15) 100%
+    );
+    transition: height 0.15s;
+}
+
+.music-slider:hover {
+    height: 6px;
+}
+
+/* Volume slider default full fill styling */
+#music-volume {
+    --progress: 80%;
+}
+
+.music-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background: #38bdf8;
+    border: 2px solid white;
+    box-shadow: 0 0 6px rgba(56,189,248,0.6);
+    cursor: pointer;
+    transition: transform 0.15s;
+}
+
+.music-slider::-webkit-slider-thumb:hover {
+    transform: scale(1.2);
+}
+
+.music-slider::-moz-range-thumb {
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background: #38bdf8;
+    border: 2px solid white;
+    box-shadow: 0 0 6px rgba(56,189,248,0.6);
+    cursor: pointer;
+}
+
+/* ── MUSIC PLAYER ENTRANCE ANIMATION ── */
+#music-player-container {
+    animation: fade-in 0.4s ease-out;
+}
+
+/* ── PLAYER CARD GLOW ── */
+#music-player-card {
+    box-shadow:
+        0 25px 60px -12px rgba(14, 165, 233, 0.25),
+        0 0 0 1px rgba(255,255,255,0.08);
+}
+
+/* ── SKILL BARS (Profil) ── */
+.skill-bar-fill {
+    width: 0;
+    transition: width 1.2s cubic-bezier(0.22, 1, 0.36, 1);
+    border-radius: 9999px;
+}
+
+/* ── UTILITIES & OVERRIDES ── */
+.hidden {
+    display: none !important;
+}
+
+/* ── MODAL BACKDROP ── */
+#detail-modal:not(.hidden) {
+    display: flex !important;
+}
+
+/* ── SCROLLBAR CUSTOM ── */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #f1f5f9; }
+::-webkit-scrollbar-thumb { background: #bae6fd; border-radius: 9999px; }
+::-webkit-scrollbar-thumb:hover { background: #38bdf8; }

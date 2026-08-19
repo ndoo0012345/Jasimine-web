@@ -1,0 +1,1196 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angelica Jasmine Kartawinata | Sekolah Cinta Kasih Tzu Chi</title>
+    <meta name="description"
+        content="Website profil dan portofolio kumpulan tugas sekolah Angelica Jasmine Kartawinata dari Sekolah Cinta Kasih Tzu Chi.">
+    <meta name="author" content="Angelica Jasmine Kartawinata">
+
+    <!-- Google Fonts: Inter & Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#f0f9ff',
+                            100: '#e0f2fe',
+                            200: '#bae6fd',
+                            300: '#7dd3fc',
+                            400: '#38bdf8',
+                            500: '#0ea5e9',
+                            600: '#0284c7',
+                            700: '#0369a1',
+                            800: '#075985',
+                            900: '#0c4a6e',
+                        },
+                        tzuchi: {
+                            blue: '#1e3a8a',
+                            sky: '#e2f1fd',
+                            softBg: '#f4f9fd',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'Inter', 'sans-serif'],
+                    },
+                    boxShadow: {
+                        'soft': '0 10px 30px -5px rgba(14, 165, 233, 0.08)',
+                        'card': '0 4px 20px 0 rgba(0, 0, 0, 0.04)',
+                        'card-hover': '0 12px 30px -5px rgba(14, 165, 233, 0.18)',
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body
+    class="bg-[#f8fafc] text-slate-800 font-sans antialiased min-h-screen flex flex-col justify-between selection:bg-brand-200 selection:text-brand-900">
+
+    <!-- TOP ANNOUNCEMENT / HEADER BADGE -->
+    <div
+        class="bg-gradient-to-r from-brand-600 via-brand-500 to-sky-400 text-white text-xs sm:text-sm py-2 px-4 text-center font-medium shadow-sm flex items-center justify-center gap-2">
+        <span class="bg-white/20 px-2 py-0.5 rounded-full text-[11px] font-semibold tracking-wide uppercase">Official
+            Site</span>
+        <span>Portofolio & Kumpulan Tugas Sekolah &bull; <strong>Sekolah Cinta Kasih Tzu Chi</strong></span>
+    </div>
+
+    <!-- MAIN NAVIGATION BAR -->
+    <header class="sticky top-0 z-40 glass-nav border-b border-brand-100 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+
+                <!-- BRAND / LOGO -->
+                <a href="index.html" class="flex items-center gap-3 group focus:outline-none">
+                    <img src="muak.jpeg" alt="Angelica Jasmine Kartawinata"
+                        class="w-11 h-11 rounded-2xl object-cover shadow-md shadow-brand-200 group-hover:scale-105 transition-transform duration-300 border border-brand-200">
+                    <div>
+                        <h1
+                            class="font-bold text-lg text-slate-900 leading-tight group-hover:text-brand-600 transition-colors">
+                            Angelica Jasmine K.
+                        </h1>
+                        <p class="text-xs text-brand-600 font-medium flex items-center gap-1">
+                            <i class="fa-solid font-normal fa-graduation-cap text-[10px]"></i> Sekolah Cinta Kasih Tzu
+                            Chi
+                        </p>
+                    </div>
+                </a>
+
+                <!-- DESKTOP MENU -->
+                <nav
+                    class="hidden md:flex items-center gap-1 bg-brand-50/70 p-1.5 rounded-2xl border border-brand-100/80">
+                    <a href="index.html" id="nav-dashboard"
+                        class="nav-btn px-5 py-2.5 rounded-xl text-sm font-semibold transition-all duration-200 text-brand-700 bg-white shadow-sm">
+                        <i class="fa-solid fa-house-chimney text-xs mr-2"></i>Dashboard
+                    </a>
+                    <a href="profil.html" id="nav-profil"
+                        class="nav-btn px-5 py-2.5 rounded-xl text-sm font-semibold transition-all duration-200 text-slate-600 hover:text-brand-600 hover:bg-white/60">
+                        <i class="fa-solid fa-user-graduate text-xs mr-2"></i>Profil
+                    </a>
+                    <a href="informatika.html" id="nav-informatika"
+                        class="nav-btn px-5 py-2.5 rounded-xl text-sm font-semibold transition-all duration-200 text-slate-600 hover:text-brand-600 hover:bg-white/60">
+                        <i class="fa-solid fa-laptop-code text-xs mr-2"></i>Informatika
+                    </a>
+                    <a href="bahasa-indonesia.html" id="nav-bahasaindonesia"
+                        class="nav-btn px-5 py-2.5 rounded-xl text-sm font-semibold transition-all duration-200 text-slate-600 hover:text-brand-600 hover:bg-white/60">
+                        <i class="fa-solid fa-book-bookmark text-xs mr-2"></i>Bahasa Indonesia
+                    </a>
+                    <a href="arcade.html" id="nav-arcade"
+                        class="nav-btn px-5 py-2.5 rounded-xl text-sm font-semibold transition-all duration-200 text-slate-600 hover:text-brand-600 hover:bg-white/60">
+                        <i class="fa-solid fa-gamepad text-xs mr-2"></i>Arcade
+                    </a>
+                    <a href="#schedule" onclick="switchTab('schedule')" id="nav-schedule"
+                        class="nav-btn px-5 py-2.5 rounded-xl text-sm font-semibold transition-all duration-200 text-slate-600 hover:text-brand-600 hover:bg-white/60">
+                        <i class="fa-solid fa-calendar-days text-xs mr-2"></i>Schedule
+                    </a>
+                </nav>
+
+                <!-- SOCIAL QUICK LINKS & MOBILE BUTTON -->
+                <div class="flex items-center gap-2 sm:gap-3">
+                    <div class="hidden lg:flex items-center gap-2 border-r border-slate-200 pr-3 mr-1">
+                        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" title="Instagram"
+                            class="w-9 h-9 rounded-xl bg-slate-100 hover:bg-brand-100 hover:text-brand-600 text-slate-600 flex items-center justify-center transition-all duration-200">
+                            <i class="fa-brands fa-instagram text-base"></i>
+                        </a>
+                        <a href="https://github.com" target="_blank" rel="noopener noreferrer" title="GitHub"
+                            class="w-9 h-9 rounded-xl bg-slate-100 hover:bg-brand-100 hover:text-brand-600 text-slate-600 flex items-center justify-center transition-all duration-200">
+                            <i class="fa-brands fa-github text-base"></i>
+                        </a>
+                        <a href="mailto:angelica@example.com" title="Email Saya"
+                            class="w-9 h-9 rounded-xl bg-slate-100 hover:bg-brand-100 hover:text-brand-600 text-slate-600 flex items-center justify-center transition-all duration-200">
+                            <i class="fa-regular fa-envelope text-base"></i>
+                        </a>
+                    </div>
+
+                    <a href="profil.html#contact-section"
+                        class="hidden sm:inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-brand-500 hover:bg-brand-600 text-white text-xs sm:text-sm font-semibold shadow-md shadow-brand-200 transition-all duration-200">
+                        <i class="fa-regular fa-paper-plane"></i> Kontak
+                    </a>
+
+                    <!-- Mobile Menu Trigger -->
+                    <button id="mobile-menu-btn" onclick="toggleMobileMenu()"
+                        class="md:hidden w-10 h-10 rounded-xl bg-slate-100 hover:bg-brand-100 text-slate-700 flex items-center justify-center transition-colors">
+                        <i class="fa-solid fa-bars text-lg" id="mobile-menu-icon"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- MOBILE MENU DROPDOWN -->
+        <div id="mobile-menu"
+            class="hidden md:hidden border-t border-brand-100 bg-white px-4 pt-3 pb-6 space-y-2 shadow-xl animate-fade-in">
+            <a href="index.html" onclick="toggleMobileMenu();" id="mob-nav-dashboard"
+                class="w-full text-left px-4 py-3 rounded-xl font-semibold text-brand-600 bg-brand-50 flex items-center gap-3">
+                <i class="fa-solid fa-house-chimney text-base w-6 text-center"></i> Dashboard
+            </a>
+            <a href="profil.html" onclick="toggleMobileMenu();" id="mob-nav-profil"
+                class="w-full text-left px-4 py-3 rounded-xl font-semibold text-slate-700 hover:bg-slate-50 flex items-center gap-3">
+                <i class="fa-solid fa-user-graduate text-base w-6 text-center"></i> Profil Saya
+            </a>
+            <a href="informatika.html" onclick="toggleMobileMenu();" id="mob-nav-informatika"
+                class="w-full text-left px-4 py-3 rounded-xl font-semibold text-slate-700 hover:bg-slate-50 flex items-center gap-3">
+                <i class="fa-solid fa-laptop-code text-base w-6 text-center"></i> Informatika
+            </a>
+            <a href="bahasa-indonesia.html" onclick="toggleMobileMenu();" id="mob-nav-bahasaindonesia"
+                class="w-full text-left px-4 py-3 rounded-xl font-semibold text-slate-700 hover:bg-slate-50 flex items-center gap-3">
+                <i class="fa-solid fa-book-bookmark text-base w-6 text-center"></i> Bahasa Indonesia
+            </a>
+            <a href="arcade.html" onclick="toggleMobileMenu();" id="mob-nav-arcade"
+                class="w-full text-left px-4 py-3 rounded-xl font-semibold text-slate-700 hover:bg-slate-50 flex items-center gap-3">
+                <i class="fa-solid fa-gamepad text-base w-6 text-center"></i> Arcade
+            </a>
+            <a href="#schedule" onclick="switchTab('schedule'); toggleMobileMenu();" id="mob-nav-schedule"
+                class="w-full text-left px-4 py-3 rounded-xl font-semibold text-slate-700 hover:bg-slate-50 flex items-center gap-3">
+                <i class="fa-solid fa-calendar-days text-base w-6 text-center"></i> Schedule
+            </a>
+
+            <div class="pt-4 border-t border-slate-100 flex items-center justify-around text-slate-600">
+                <a href="https://instagram.com" target="_blank"
+                    class="p-2 hover:text-brand-600 flex items-center gap-1.5 text-xs font-medium">
+                    <i class="fa-brands fa-instagram text-lg"></i> Instagram
+                </a>
+                <a href="https://linkedin.com" target="_blank"
+                    class="p-2 hover:text-brand-600 flex items-center gap-1.5 text-xs font-medium">
+                    <i class="fa-brands fa-linkedin text-lg"></i> LinkedIn
+                </a>
+                <a href="https://github.com" target="_blank"
+                    class="p-2 hover:text-brand-600 flex items-center gap-1.5 text-xs font-medium">
+                    <i class="fa-brands fa-github text-lg"></i> GitHub
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT CONTAINER -->
+    <main class="flex-grow max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-10">
+
+        <!-- ========================================== -->
+        <!-- TAB 1: DASHBOARD -->
+        <!-- ========================================== -->
+        <section id="tab-dashboard" class="tab-content space-y-10">
+
+            <!-- HERO BANNER -->
+            <div
+                class="relative overflow-hidden rounded-3xl bg-gradient-to-br from-brand-500 via-brand-400 to-sky-200 text-white p-8 sm:p-12 shadow-soft">
+                <!-- Background decorative shapes -->
+                <div class="absolute -right-12 -top-12 w-64 h-64 rounded-full bg-white/10 blur-2xl pointer-events-none">
+                </div>
+                <div
+                    class="absolute right-1/3 -bottom-16 w-80 h-80 rounded-full bg-brand-300/20 blur-3xl pointer-events-none">
+                </div>
+
+                <div class="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                    <div class="lg:col-span-8 space-y-5 text-center lg:text-left">
+                        <div
+                            class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/20 backdrop-blur-md text-xs font-semibold tracking-wide border border-white/30 text-white">
+                            <i class="fa-solid fa-sparkles"></i> Welcome to My Digital Space
+                        </div>
+                        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight leading-tight">
+                            Halo, Saya <span
+                                class="underline decoration-brand-200 decoration-wavy underline-offset-4">Angelica
+                                Jasmine</span>
+                        </h2>
+                        <p class="text-brand-50 text-base sm:text-lg max-w-2xl font-normal leading-relaxed">
+                            Selamat datang di portal portofolio & dokumentasi tugas sekolah saya di <strong
+                                class="text-white font-semibold">Sekolah Cinta Kasih Tzu Chi</strong>. Tempat di mana
+                            karya, kreativitas, dan proses belajar terangkum dengan rapi.
+                        </p>
+
+                        <div class="pt-2 flex flex-wrap items-center justify-center lg:justify-start gap-3">
+                            <a href="profil.html"
+                                class="px-6 py-3 rounded-2xl bg-white text-brand-700 hover:bg-brand-50 font-bold text-sm shadow-lg shadow-brand-900/10 transition-all duration-200 flex items-center gap-2">
+                                <i class="fa-solid fa-user"></i> Lihat Profil Lengkap
+                            </a>
+                            <a href="informatika.html"
+                                class="px-6 py-3 rounded-2xl bg-white/15 hover:bg-white/25 border border-white/30 text-white font-semibold text-sm backdrop-blur-md transition-all duration-200 flex items-center gap-2">
+                                <i class="fa-solid fa-folder-open"></i> Eksplor Tugas
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- HERO BADGE CARD -->
+                    <div class="lg:col-span-4 flex justify-center">
+                        <div
+                            class="bg-white/95 backdrop-blur-md p-6 rounded-2xl text-slate-800 shadow-xl border border-white/50 max-w-xs w-full text-center space-y-4 transform hover:-translate-y-1 transition-transform duration-300">
+                            <div
+                                class="relative w-24 h-24 mx-auto rounded-full bg-gradient-to-tr from-brand-400 to-sky-100 p-1 shadow-md">
+                                <img src="muak.jpeg" alt="Angelica Jasmine Kartawinata"
+                                    class="w-full h-full rounded-full object-cover">
+                                <span
+                                    class="absolute bottom-1 right-1 w-5 h-5 bg-emerald-500 border-2 border-white rounded-full"
+                                    title="Status: Pelajar Aktif"></span>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-slate-900 text-lg">Angelica Jasmine K.</h3>
+                                <p class="text-xs text-brand-600 font-medium mt-0.5">Siswa Cinta Kasih Tzu Chi</p>
+                            </div>
+                            <div class="grid grid-cols-2 gap-2 pt-2 border-t border-slate-100 text-xs">
+                                <div class="bg-brand-50/60 p-2 rounded-xl">
+                                    <span class="block font-bold text-brand-700 text-sm">100%</span>
+                                    <span class="text-slate-500 text-[11px]">Semangat</span>
+                                </div>
+                                <div class="bg-brand-50/60 p-2 rounded-xl">
+                                    <span class="block font-bold text-brand-700 text-sm">2 Utama</span>
+                                    <span class="text-slate-500 text-[11px]">Mapel Unggulan</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TZU CHI QUOTE BANNER -->
+            <div
+                class="bg-white rounded-2xl p-6 sm:p-8 border border-brand-100 shadow-soft flex flex-col md:flex-row items-center gap-6">
+                <div
+                    class="w-14 h-14 rounded-2xl bg-brand-100 text-brand-600 flex-shrink-0 flex items-center justify-center text-2xl shadow-sm">
+                    <i class="fa-solid fa-quote-left"></i>
+                </div>
+                <div class="space-y-1 text-center md:text-left flex-grow">
+                    <span class="text-xs font-bold uppercase tracking-wider text-brand-600">Kata Perenungan Master Cheng
+                        Yen</span>
+                    <blockquote class="text-slate-700 italic text-base sm:text-lg font-medium">
+                        "Dengan bersumbangsih dan belajar dengan sungguh-sungguh, kita akan memperoleh kedamaian, ilmu,
+                        dan kebahagiaan sejati."
+                    </blockquote>
+                </div>
+                <div
+                    class="text-xs font-semibold text-brand-700 bg-brand-50 px-4 py-2 rounded-xl border border-brand-100 flex-shrink-0">
+                    Sekolah Cinta Kasih Tzu Chi
+                </div>
+            </div>
+
+            <!-- QUICK STATS CARDS -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+                <div
+                    class="bg-white p-6 rounded-2xl border border-slate-100 shadow-card hover:shadow-card-hover transition-all duration-300 flex items-center gap-4">
+                    <div
+                        class="w-12 h-12 rounded-xl bg-sky-100 text-brand-600 flex items-center justify-center text-xl font-bold">
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+                    <div>
+                        <span class="text-2xl font-extrabold text-slate-900">4+</span>
+                        <p class="text-xs text-slate-500 font-medium">Tugas Informatika</p>
+                    </div>
+                </div>
+
+                <div
+                    class="bg-white p-6 rounded-2xl border border-slate-100 shadow-card hover:shadow-card-hover transition-all duration-300 flex items-center gap-4">
+                    <div
+                        class="w-12 h-12 rounded-xl bg-blue-100 text-blue-600 flex items-center justify-center text-xl font-bold">
+                        <i class="fa-solid fa-book-open"></i>
+                    </div>
+                    <div>
+                        <span class="text-2xl font-extrabold text-slate-900">4+</span>
+                        <p class="text-xs text-slate-500 font-medium">Tugas Bahasa Indonesia</p>
+                    </div>
+                </div>
+
+                <div
+                    class="bg-white p-6 rounded-2xl border border-slate-100 shadow-card hover:shadow-card-hover transition-all duration-300 flex items-center gap-4">
+                    <div
+                        class="w-12 h-12 rounded-xl bg-indigo-100 text-indigo-600 flex items-center justify-center text-xl font-bold">
+                        <i class="fa-solid fa-award"></i>
+                    </div>
+                    <div>
+                        <span class="text-2xl font-extrabold text-slate-900">2026</span>
+                        <p class="text-xs text-slate-500 font-medium">Tahun Akademik</p>
+                    </div>
+                </div>
+
+                <div
+                    class="bg-white p-6 rounded-2xl border border-slate-100 shadow-card hover:shadow-card-hover transition-all duration-300 flex items-center gap-4">
+                    <div
+                        class="w-12 h-12 rounded-xl bg-emerald-100 text-emerald-600 flex items-center justify-center text-xl font-bold">
+                        <i class="fa-solid fa-circle-check"></i>
+                    </div>
+                    <div>
+                        <span class="text-2xl font-extrabold text-slate-900">Aktif</span>
+                        <p class="text-xs text-slate-500 font-medium">Status Pembelajaran</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FEATURED HIGHLIGHTS / RECENT ASSIGNMENTS PREVIEW -->
+            <div class="space-y-6">
+                <div class="flex items-center justify-between">
+                    <div>
+                        <h3 class="text-xl font-bold text-slate-900">Tugas Terbaru & Unggulan</h3>
+                        <p class="text-xs text-slate-500">Ringkasan karya terbaru dari mata pelajaran pilihan</p>
+                    </div>
+                    <div class="flex gap-2">
+                        <a href="informatika.html"
+                            class="text-xs font-semibold text-brand-600 hover:text-brand-700 bg-brand-50 hover:bg-brand-100 px-3 py-1.5 rounded-lg transition-colors inline-flex items-center">
+                            Lihat Semua <i class="fa-solid fa-arrow-right ml-1"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- Highlight Informatika -->
+                    <div
+                        class="bg-white rounded-2xl p-6 border border-brand-100 shadow-card hover:shadow-card-hover transition-all duration-300 space-y-4">
+                        <div class="flex items-center justify-between">
+                            <span class="px-3 py-1 rounded-full text-xs font-semibold bg-brand-100 text-brand-700">
+                                <i class="fa-solid fa-laptop-code mr-1"></i> Informatika
+                            </span>
+                            <span class="text-xs text-slate-400">Terbaru</span>
+                        </div>
+                        <h4 class="font-bold text-slate-900 text-lg">Perancangan Web Portofolio HTML & Tailwind CSS</h4>
+                        <p class="text-slate-600 text-sm line-clamp-2">
+                            Membuat website profil pribadi yang interaktif, merespon berbagai ukuran layar, dan
+                            dihosting secara online.
+                        </p>
+                        <div class="flex items-center justify-between pt-2 border-t border-slate-100 text-xs">
+                            <span class="text-slate-500"><i class="fa-regular fa-calendar mr-1"></i> Semester
+                                Ganjil</span>
+                            <a href="informatika.html" class="font-bold text-brand-600 hover:underline">
+                                Buka Detail &rarr;
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Highlight Bahasa Indonesia -->
+                    <div
+                        class="bg-white rounded-2xl p-6 border border-brand-100 shadow-card hover:shadow-card-hover transition-all duration-300 space-y-4">
+                        <div class="flex items-center justify-between">
+                            <span class="px-3 py-1 rounded-full text-xs font-semibold bg-blue-100 text-blue-700">
+                                <i class="fa-solid fa-book-bookmark mr-1"></i> Bahasa Indonesia
+                            </span>
+                            <span class="text-xs text-slate-400">Terbaru</span>
+                        </div>
+                        <h4 class="font-bold text-slate-900 text-lg">Teks Laporan Hasil Observasi (LHO) Environment</h4>
+                        <p class="text-slate-600 text-sm line-clamp-2">
+                            Laporan analisis observasi kebersihan dan kelestarian lingkungan sekolah di Cinta Kasih Tzu
+                            Chi.
+                        </p>
+                        <div class="flex items-center justify-between pt-2 border-t border-slate-100 text-xs">
+                            <span class="text-slate-500"><i class="fa-regular fa-calendar mr-1"></i> Semester
+                                Ganjil</span>
+                            <a href="bahasa-indonesia.html" class="font-bold text-brand-600 hover:underline">
+                                Buka Detail &rarr;
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- ========================================== -->
+        <!-- TAB 4: SCHEDULE -->
+        <!-- ========================================== -->
+        <section id="tab-schedule" class="tab-content hidden space-y-8">
+
+            <!-- HERO HEADER BANNER -->
+            <div
+                class="relative overflow-hidden rounded-3xl bg-gradient-to-br from-brand-600 via-brand-500 to-sky-400 text-white p-6 sm:p-10 shadow-soft">
+                <div class="absolute -right-12 -top-12 w-64 h-64 rounded-full bg-white/10 blur-2xl pointer-events-none">
+                </div>
+                <div class="relative z-10 flex flex-col md:flex-row md:items-center justify-between gap-6">
+                    <div class="space-y-2.5">
+                        <div
+                            class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/20 backdrop-blur-md text-xs font-semibold border border-white/30 text-white">
+                            <i class="fa-solid fa-calendar-days"></i> Academic & Personal Schedule
+                        </div>
+                        <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight">
+                            Schedule
+                        </h2>
+                        <p class="text-brand-100 text-xs sm:text-sm max-w-xl font-normal leading-relaxed">
+                            Jadwal Mata Pelajaran SMA Cinta Kasih Tzu Chi Kelas XI-3 (Semester Ganjil 2026/2027) &
+                            Agenda Kegiatan Pribadi.
+                        </p>
+                    </div>
+
+                    <!-- Subtab Switcher -->
+                    <div
+                        class="flex items-center gap-2 bg-white/20 p-1.5 rounded-2xl backdrop-blur-md border border-white/30 self-start md:self-center">
+                        <button onclick="switchScheduleSubtab('lesson')" id="subtab-btn-lesson"
+                            class="schedule-tab-btn px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition-all duration-200 bg-white text-brand-700 shadow-md flex items-center gap-2">
+                            <i class="fa-solid fa-graduation-cap text-sm"></i> LESSON SCHEDULE
+                        </button>
+                        <button onclick="switchScheduleSubtab('my')" id="subtab-btn-my"
+                            class="schedule-tab-btn px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition-all duration-200 text-white hover:bg-white/15 flex items-center gap-2">
+                            <i class="fa-solid fa-user-clock text-sm"></i> MY SCHEDULE
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SUBTAB 1: LESSON SCHEDULE -->
+            <div id="schedule-subtab-lesson" class="schedule-subtab-content space-y-6">
+                <div class="bg-white rounded-3xl p-6 sm:p-8 border border-brand-100 shadow-soft space-y-6">
+
+                    <!-- Section Header & Day Filters -->
+                    <div
+                        class="flex flex-col lg:flex-row lg:items-center justify-between gap-4 pb-6 border-b border-slate-100">
+                        <div class="flex items-center gap-3">
+                            <div
+                                class="w-12 h-12 rounded-2xl bg-brand-100 text-brand-600 flex items-center justify-center text-xl font-bold shadow-sm">
+                                <i class="fa-solid fa-school"></i>
+                            </div>
+                            <div>
+                                <div class="flex items-center gap-2 flex-wrap">
+                                    <h3 class="text-xl font-extrabold text-slate-900">LESSON SCHEDULE</h3>
+                                    <span
+                                        class="px-2.5 py-0.5 rounded-full text-xs font-extrabold bg-brand-600 text-white uppercase tracking-wider">Kelas
+                                        XI - 3</span>
+                                </div>
+                                <p class="text-xs text-slate-500 mt-0.5">SMA Cinta Kasih Tzu Chi &bull; Semester Ganjil
+                                    Tahun Pelajaran 2026/2027</p>
+                            </div>
+                        </div>
+
+                        <!-- Day Filter Pills -->
+                        <div class="flex items-center gap-1.5 flex-wrap">
+                            <button onclick="filterDay('all')" id="day-btn-all"
+                                class="day-filter-btn px-3.5 py-1.5 rounded-xl text-xs font-bold bg-brand-600 text-white shadow-sm transition-all">Semua
+                                Hari</button>
+                            <button onclick="filterDay('senin')" id="day-btn-senin"
+                                class="day-filter-btn px-3.5 py-1.5 rounded-xl text-xs font-bold bg-slate-100 text-slate-600 hover:bg-brand-50 hover:text-brand-600 transition-all">Senin</button>
+                            <button onclick="filterDay('selasa')" id="day-btn-selasa"
+                                class="day-filter-btn px-3.5 py-1.5 rounded-xl text-xs font-bold bg-slate-100 text-slate-600 hover:bg-brand-50 hover:text-brand-600 transition-all">Selasa</button>
+                            <button onclick="filterDay('rabu')" id="day-btn-rabu"
+                                class="day-filter-btn px-3.5 py-1.5 rounded-xl text-xs font-bold bg-slate-100 text-slate-600 hover:bg-brand-50 hover:text-brand-600 transition-all">Rabu</button>
+                            <button onclick="filterDay('kamis')" id="day-btn-kamis"
+                                class="day-filter-btn px-3.5 py-1.5 rounded-xl text-xs font-bold bg-slate-100 text-slate-600 hover:bg-brand-50 hover:text-brand-600 transition-all">Kamis</button>
+                            <button onclick="filterDay('jumat')" id="day-btn-jumat"
+                                class="day-filter-btn px-3.5 py-1.5 rounded-xl text-xs font-bold bg-slate-100 text-slate-600 hover:bg-brand-50 hover:text-brand-600 transition-all">Jumat</button>
+                        </div>
+                    </div>
+
+                    <!-- Days Cards Container -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-5 gap-5" id="schedule-days-container">
+
+                        <!-- SENIN -->
+                        <div
+                            class="day-card day-senin bg-slate-50/70 rounded-2xl border border-slate-200/80 overflow-hidden flex flex-col hover:border-brand-300 transition-all duration-200 shadow-sm">
+                            <div
+                                class="bg-gradient-to-r from-amber-500 to-amber-600 text-white px-4 py-3 font-bold text-sm flex items-center justify-between">
+                                <span class="flex items-center gap-2"><i class="fa-regular fa-calendar"></i>
+                                    SENIN</span>
+                                <span class="text-[11px] bg-white/20 px-2 py-0.5 rounded-full font-medium">9 JP</span>
+                            </div>
+                            <div class="p-3 space-y-2 text-xs flex-grow">
+                                <div
+                                    class="bg-amber-50 border border-amber-200/60 p-2 rounded-xl text-amber-900 font-semibold">
+                                    <div class="text-[10px] text-amber-700">06.30 - 07.30</div>
+                                    <div>Upacara / Info Day / Wali Kelas</div>
+                                </div>
+
+                                <div class="bg-white p-2.5 rounded-xl border border-slate-100 shadow-2xs space-y-1">
+                                    <div class="flex items-center justify-between text-[10px] text-slate-400">
+                                        <span>JP 1 - 2 (07.30 - 09.00)</span>
+                                        <span class="bg-blue-50 text-blue-600 font-bold px-1.5 py-0.5 rounded">KD
+                                            3</span>
+                                    </div>
+                                    <div class="font-bold text-slate-800 text-sm">SOSIOLOGI</div>
+                                    <div class="text-[11px] text-slate-500">Guru: Cornel Kaban</div>
+                                </div>
+
+                                <div
+                                    class="bg-slate-100/70 py-1 px-2.5 rounded-lg text-[11px] text-slate-500 text-center font-medium">
+                                    <i class="fa-solid fa-mug-saucer mr-1 text-slate-400"></i> Istirahat (09.00 - 09.30)
+                                </div>
+
+                                <div class="bg-white p-2.5 rounded-xl border border-slate-100 shadow-2xs space-y-1">
+                                    <div class="flex items-center justify-between text-[10px] text-slate-400">
+                                        <span>JP 3-4 (09.30 - 10.50)</span>
+                                        <span class="bg-emerald-50 text-emerald-600 font-bold px-1.5 py-0.5 rounded">KD
+                                            25</span>
+                                    </div>
+                                    <div class="font-bold text-slate-800 text-sm">MANDARIN</div>
+                                    <div class="text-[11px] text-slate-500">Guru: Junaidi</div>
+                                </div>
+
+                                <div class="bg-white p-2.5 rounded-xl border border-slate-100 shadow-2xs space-y-1">
+                                    <div class="flex items-center justify-between text-[10px] text-slate-400">
+                                        <span>JP 5 (10.50 - 11.30)</span>
+                                        <span class="bg-purple-50 text-purple-600 font-bold px-1.5 py-0.5 rounded">KD
+                                            9</span>
+                                    </div>
+                                    <div class="font-bold text-slate-800 text-sm">BUDI PEKERTI</div>
+                                    <div class="text-[11px] text-slate-500">Guru: Suwarni </div>
+                                </div>
+
+                                <div class="bg-white p-2.5 rounded-xl border border-slate-100 shadow-2xs space-y-1">
+                                    <div class="flex items-center justify-between text-[10px] text-slate-400">
+                                        <span>JP 6 (11.30 - 12.10)</span>
+                                        <span class="bg-orange-50 text-orange-600 font-bold px-1.5 py-0.5 rounded">KD
+                                            20</span>
+                                    </div>
+                                    <div class="font-bold text-slate-800 text-sm">BUDAYA HUMANIS</div>
+                                    <div class="text-[11px] text-slate-500">Guru: Iriwaty Japutra</div>
+                                </div>
+
+                                <div
+                                    class="bg-slate-100/70 py-1 px-2.5 rounded-lg text-[11px] text-slate-500 text-center font-medium">
+                                    <i class="fa-solid fa-utensils mr-1 text-slate-400"></i> Istirahat (12.10 - 12.40)
+                                </div>
+
+                                <div class="bg-white p-2.5 rounded-xl border border-slate-100 shadow-2xs space-y-1">
+                                    <div class="flex items-center justify-between text-[10px] text-slate-400">
+                                        <span>JP 7 (12.40 - 13.20)</span>
+                                        <span class="bg-sky-50 text-sky-600 font-bold px-1.5 py-0.5 rounded">KD
+                                            17</span>
+                                    </div>
+                                    <div class="font-bold text-slate-800 text-sm">MAT WAJIB</div>
+                                    <div class="text-[11px] text-slate-500">Guru: Jefry Corpry YH</div>
+                                </div>
+
+                                <div class="bg-white p-2.5 rounded-xl border border-slate-100 shadow-2xs space-y-1">
+                                    <div class="flex items-center justify-between text-[10px] text-slate-400">
+                                        <span>JP 8 - 9 (13.20 - 14.40)</span>
+                                        <span class="bg-teal-50 text-teal-600 font-bold px-1.5 py-0.5 rounded">KD
+                                            4</span>
+                                    </div>
+                                    <div class="font-bold text-slate-800 text-sm">EKONOMI</div>
+                                    <div class="text-[11px] text-slate-500">Guru: Debie Lola</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- SELASA -->
+                        <div
+                            class="day-card day-selasa bg-slate-50/70 rounded-2xl border border-slate-200/80 overflow-hidden flex flex-col hover:border-brand-300 transition-all duration-200 shadow-sm">
+                            <div
+                                class="bg-gradient-to-r from-blue-600 to-blue-700 text-white px-4 py-3 font-bold text-sm flex items-center justify-between">
+                                <span class="flex items-center gap-2"><i class="fa-regular fa-calendar"></i>
+                                    SELASA</span>
+                                <span class="text-[11px] bg-white/20 px-2 py-0.5 rounded-full font-medium">10 JP</span>
+                            </div>
+                            <div class="p-3 space-y-2 text-xs flex-grow">
+                                <div
+                                    class="bg-blue-50 border border-blue-200/60 p-2 rounded-xl text-blue-900 font-semibold">
+                                    <div class="text-[10px] text-blue-700">06.30 - 06.45</div>
+                                    <div>Pembiasaan Awal</div>
+                                </div>
+
+                                <div class="bg-white p-2.5 rounded-xl border border-slate-100 shadow-2xs space-y-1">
+                                    <div class="flex items-center justify-between text-[10px] text-slate-400">
+                                        <span>JP 1 - 2 (06.45 - 08.15)</span>
+                                        <span class="bg-emerald-50 text-emerald-600 font-bold px-1.5 py-0.5 rounded">KD
+                                            26</span>
+                                    </div>
+                                    <div class="font-bold text-slate-800 text-sm">AGAMA</div>
+                                    <div class="text-[11px] text-slate-500">Guru: Eduardus Laot</div>
+                                </div>
+
+                                <div class="bg-white p-2.5 rounded-xl border border-slate-100 shadow-2xs space-y-1">
+                                    <div class="flex items-center justify-between text-[10px] text-slate-400">
+                                        <span>JP 3 - 4 (08.15 - 09.45)</span>
+                                        <span class="bg-sky-50 text-sky-600 font-bold px-1.5 py-0.5 rounded">KD
+                                            17</span>
+                                    </div>
+                                    <div class="font-bold text-slate-800 text-sm">BAHASA INDONESIA</div>
+                                    <div class="text-[11px] text-slate-500">Guru: Ruly Mediana</div>
+                                </div>
+
+                                <div
+                                    class="bg-slate-100/70 py-1 px-2.5 rounded-lg text-[11px] text-slate-500 text-center font-medium">
+                                    <i class="fa-solid fa-mug-saucer mr-1 text-slate-400"></i> Istirahat (09.45 - 10.05)
+                                </div>
+
+                                <div class="bg-white p-2.5 rounded-xl border border-slate-100 shadow-2xs space-y-1">
+                                    <div class="flex items-center justify-between text-[10px] text-slate-400">
+                                        <span>JP 5 - 6 (10.05 - 11.35)</span>
+                                        <span class="bg-indigo-50 text-indigo-600 font-bold px-1.5 py-0.5 rounded">KD
+                                            14</span>
+                                    </div>
+                                    <div class="font-bold text-slate-800 text-sm">GEOGRAFI</div>
+                                    <div class="text-[11px] text-slate-500">Guru: Nur Fajar Sidik</div>
+                                </div>
+
+                                <div
+                                    class="bg-slate-100/70 py-1 px-2.5 rounded-lg text-[11px] text-slate-500 text-center font-medium">
+                                    <i class="fa-solid fa-utensils mr-1 text-slate-400"></i> Istirahat (11.35 - 12.00)
+                                </div>
+
+                                <div class="bg-white p-2.5 rounded-xl border border-slate-100 shadow-2xs space-y-1">
+                                    <div class="flex items-center justify-between text-[10px] text-slate-400">
+                                        <span>JP 7 - 8 (12.00 - 13.20)</span>
+                                        <span class="bg-teal-50 text-teal-600 font-bold px-1.5 py-0.5 rounded">KD
+                                            4</span>
+                                    </div>
+                                    <div class="font-bold text-slate-800 text-sm">EKONOMI</div>
+                                    <div class="text-[11px] text-slate-500">Guru: Debie Lola</div>
+                                </div>
+
+                                <div class="bg-white p-2.5 rounded-xl border border-slate-100 shadow-2xs space-y-1">
+                                    <div class="flex items-center justify-between text-[10px] text-slate-400">
+                                        <span>JP 9 - 10 (13.20 - 14.30)</span>
+                                        <span class="bg-blue-50 text-blue-600 font-bold px-1.5 py-0.5 rounded">KD
+                                            3</span>
+                                    </div>
+                                    <div class="font-bold text-slate-800 text-sm">SOSIOLOGI</div>
+                                    <div class="text-[11px] text-slate-500">Guru: Cornel Kaban</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- RABU -->
+                        <div
+                            class="day-card day-rabu bg-slate-50/70 rounded-2xl border border-slate-200/80 overflow-hidden flex flex-col hover:border-brand-300 transition-all duration-200 shadow-sm">
+                            <div
+                                class="bg-gradient-to-r from-emerald-600 to-teal-600 text-white px-4 py-3 font-bold text-sm flex items-center justify-between">
+                                <span class="flex items-center gap-2"><i class="fa-regular fa-calendar"></i> RABU</span>
+                                <span class="text-[11px] bg-white/20 px-2 py-0.5 rounded-full font-medium">11 JP</span>
+                            </div>
+                            <div class="p-3 space-y-2 text-xs flex-grow">
+                                <div
+                                    class="bg-emerald-50 border border-emerald-200/60 p-2 rounded-xl text-emerald-900 font-semibold">
+                                    <div class="text-[10px] text-emerald-700">06.30 - 06.45</div>
+                                    <div>Pembiasaan Awal</div>
+                                </div>
+
+                                <div class="bg-white p-2.5 rounded-xl border border-slate-100 shadow-2xs space-y-1">
+                                    <div class="flex items-center justify-between text-[10px] text-slate-400">
+                                        <span>JP 1 - 2 (06.45 - 08.15)</span>
+                                        <span class="bg-violet-50 text-violet-600 font-bold px-1.5 py-0.5 rounded">KD
+                                            22</span>
+                                    </div>
+                                    <div class="font-bold text-slate-800 text-sm">FORMATIF</div>
+                                    <div class="text-[11px] text-slate-500">Guru: Yahya Yanuardi</div>
+                                </div>
+
+                                <div class="bg-white p-2.5 rounded-xl border border-slate-100 shadow-2xs space-y-1">
+                                    <div class="flex items-center justify-between text-[10px] text-slate-400">
+                                        <span>JP 3 (08.15 - 09.00)</span>
+                                        <span class="bg-emerald-50 text-emerald-600 font-bold px-1.5 py-0.5 rounded">KD
+                                            25</span>
+                                    </div>
+                                    <div class="font-bold text-slate-800 text-sm">MANDARIN</div>
+                                    <div class="text-[11px] text-slate-500">Guru: Junaidi</div>
+                                </div>
+
+                                <div
+                                    class="bg-slate-100/70 py-1 px-2.5 rounded-lg text-[11px] text-slate-500 text-center font-medium">
+                                    <i class="fa-solid fa-mug-saucer mr-1 text-slate-400"></i> Istirahat (09.00 - 09.30)
+                                </div>
+
+                                <div class="bg-white p-2.5 rounded-xl border border-slate-100 shadow-2xs space-y-1">
+                                    <div class="flex items-center justify-between text-[10px] text-slate-400">
+                                        <span>JP 4 (09.30 - 10.10)</span>
+                                        <span class="bg-cyan-50 text-cyan-600 font-bold px-1.5 py-0.5 rounded">KD
+                                            7</span>
+                                    </div>
+                                    <div class="font-bold text-slate-800 text-sm">MANDARIN</div>
+                                    <div class="text-[11px] text-slate-500">Guru: Junaidi</div>
+                                </div>
+
+                                <div class="bg-white p-2.5 rounded-xl border border-slate-100 shadow-2xs space-y-1">
+                                    <div class="flex items-center justify-between text-[10px] text-slate-400">
+                                        <span>JP 5 (10.10 - 10.50)</span>
+                                        <span class="bg-amber-50 text-amber-600 font-bold px-1.5 py-0.5 rounded">KD
+                                            14</span>
+                                    </div>
+                                    <div class="font-bold text-slate-800 text-sm">SOSIOLOGI</div>
+                                    <div class="text-[11px] text-slate-500">Guru: Cornel Kaban</div>
+                                </div>
+
+                                <div class="bg-white p-2.5 rounded-xl border border-slate-100 shadow-2xs space-y-1">
+                                    <div class="flex items-center justify-between text-[10px] text-slate-400">
+                                        <span>JP 6 (10.50 - 11.30)</span>
+                                        <span class="bg-teal-50 text-teal-600 font-bold px-1.5 py-0.5 rounded">KD
+                                            4</span>
+                                    </div>
+                                    <div class="font-bold text-slate-800 text-sm">Bahasa Indonesia</div>
+                                    <div class="text-[11px] text-slate-500">Guru: Ruly Mediana</div>
+                                </div>
+
+                                <div class="bg-white p-2.5 rounded-xl border border-slate-100 shadow-2xs space-y-1">
+                                    <div class="flex items-center justify-between text-[10px] text-slate-400">
+                                        <span>JP 7 (11.30-12.10)</span>
+                                        <span class="bg-teal-50 text-teal-600 font-bold px-1.5 py-0.5 rounded">KD
+                                            4</span>
+                                    </div>
+                                    <div class="font-bold text-slate-800 text-sm">KOKURIKULER</div>
+                                    <div class="text-[11px] text-slate-500">Guru: Debie Lola</div>
+                                </div>
+
+                                <div
+                                    class="bg-slate-100/70 py-1 px-2.5 rounded-lg text-[11px] text-slate-500 text-center font-medium">
+                                    <i class="fa-solid fa-utensils mr-1 text-slate-400"></i> Istirahat (12.10 - 12.40)
+                                </div>
+
+                                <div class="bg-white p-2.5 rounded-xl border border-slate-100 shadow-2xs space-y-1">
+                                    <div class="flex items-center justify-between text-[10px] text-slate-400">
+                                        <span>JP 8 - 9 (12.40 - 14.00)</span>
+                                        <span class="bg-rose-50 text-rose-600 font-bold px-1.5 py-0.5 rounded">KD
+                                            18</span>
+                                    </div>
+                                    <div class="font-bold text-slate-800 text-sm">SEJARAH</div>
+                                    <div class="text-[11px] text-slate-500">Guru: Cornel Kaban</div>
+                                </div>
+
+                                <div class="bg-white p-2.5 rounded-xl border border-slate-100 shadow-2xs space-y-1">
+                                    <div class="flex items-center justify-between text-[10px] text-slate-400">
+                                        <span>JP 10 - 11 (14.00 - 15.20)</span>
+                                        <span class="bg-sky-50 text-sky-600 font-bold px-1.5 py-0.5 rounded">KD
+                                            17</span>
+                                    </div>
+                                    <div class="font-bold text-slate-800 text-sm">SENI BUDAYA</div>
+                                    <div class="text-[11px] text-slate-500">Guru: Diyana</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- KAMIS -->
+                        <div
+                            class="day-card day-kamis bg-slate-50/70 rounded-2xl border border-slate-200/80 overflow-hidden flex flex-col hover:border-brand-300 transition-all duration-200 shadow-sm">
+                            <div
+                                class="bg-gradient-to-r from-indigo-600 to-purple-600 text-white px-4 py-3 font-bold text-sm flex items-center justify-between">
+                                <span class="flex items-center gap-2"><i class="fa-regular fa-calendar"></i>
+                                    KAMIS</span>
+                                <span class="text-[11px] bg-white/20 px-2 py-0.5 rounded-full font-medium">10 JP</span>
+                            </div>
+                            <div class="p-3 space-y-2 text-xs flex-grow">
+                                <div
+                                    class="bg-indigo-50 border border-indigo-200/60 p-2 rounded-xl text-indigo-900 font-semibold">
+                                    <div class="text-[10px] text-indigo-700">06.30 - 06.45</div>
+                                    <div>Pembiasaan Awal</div>
+                                </div>
+
+                                <div class="bg-white p-2.5 rounded-xl border border-slate-100 shadow-2xs space-y-1">
+                                    <div class="flex items-center justify-between text-[10px] text-slate-400">
+                                        <span>JP 1 - 2 (06.45 - 08.15)</span>
+                                        <span class="bg-blue-50 text-blue-600 font-bold px-1.5 py-0.5 rounded">KD
+                                            3</span>
+                                    </div>
+                                    <div class="font-bold text-slate-800 text-sm">INFORMATIKA</div>
+                                    <div class="text-[11px] text-slate-500">Guru: Yahya Yanuardi</div>
+                                </div>
+
+                                <div class="bg-white p-2.5 rounded-xl border border-slate-100 shadow-2xs space-y-1">
+                                    <div class="flex items-center justify-between text-[10px] text-slate-400">
+                                        <span>JP 3 (08.15 - 09.00)</span>
+                                        <span class="bg-fuchsia-50 text-fuchsia-600 font-bold px-1.5 py-0.5 rounded">KD
+                                            5</span>
+                                    </div>
+                                    <div class="font-bold text-slate-800 text-sm">MAT WAJIB</div>
+                                    <div class="text-[11px] text-slate-500">Guru: Jefry Corpry YH</div>
+                                </div>
+
+                                <div
+                                    class="bg-slate-100/70 py-1 px-2.5 rounded-lg text-[11px] text-slate-500 text-center font-medium">
+                                    <i class="fa-solid fa-mug-saucer mr-1 text-slate-400"></i> Istirahat (09.00 - 09.30)
+                                </div>
+
+                                <div class="bg-white p-2.5 rounded-xl border border-slate-100 shadow-2xs space-y-1">
+                                    <div class="flex items-center justify-between text-[10px] text-slate-400">
+                                        <span>JP 4 (09.30 - 10.15)</span>
+                                        <span class="bg-cyan-50 text-cyan-600 font-bold px-1.5 py-0.5 rounded">KD
+                                            10</span>
+                                    </div>
+                                    <div class="font-bold text-slate-800 text-sm">MATEMATIKA WAJIB</div>
+                                    <div class="text-[11px] text-slate-500">Guru: Jefry Corpry YH</div>
+                                </div>
+
+                                <div class="bg-white p-2.5 rounded-xl border border-slate-100 shadow-2xs space-y-1">
+                                    <div class="flex items-center justify-between text-[10px] text-slate-400">
+                                        <span>JP 5 - 6 (10.15 - 11.45)</span>
+                                        <span class="bg-red-50 text-red-600 font-bold px-1.5 py-0.5 rounded">KD 2</span>
+                                    </div>
+                                    <div class="font-bold text-slate-800 text-sm">PPKn</div>
+                                    <div class="text-[11px] text-slate-500">Guru: Agus Salim</div>
+                                </div>
+
+                                <div
+                                    class="bg-slate-100/70 py-1 px-2.5 rounded-lg text-[11px] text-slate-500 text-center font-medium">
+                                    <i class="fa-solid fa-utensils mr-1 text-slate-400"></i> Istirahat/makan bersama
+                                    (11.45 - 12.30)
+                                </div>
+
+                                <div class="bg-white p-2.5 rounded-xl border border-slate-100 shadow-2xs space-y-1">
+                                    <div class="flex items-center justify-between text-[10px] text-slate-400">
+                                        <span>JP 7 - 9 (12.30 - 14.35)</span>
+                                        <span class="bg-sky-50 text-sky-600 font-bold px-1.5 py-0.5 rounded">KD
+                                            27</span>
+                                    </div>
+                                    <div class="font-bold text-slate-800 text-sm">BAHASA INGGRIS</div>
+                                    <div class="text-[11px] text-slate-500">Guru: Satibi</div>
+                                </div>
+
+                                <div class="bg-white p-2.5 rounded-xl border border-slate-100 shadow-2xs space-y-1">
+                                    <div class="flex items-center justify-between text-[10px] text-slate-400">
+                                        <span>JP 10 (14.35 - 15.15)</span>
+                                        <span class="bg-amber-50 text-amber-600 font-bold px-1.5 py-0.5 rounded">KD
+                                            7</span>
+                                    </div>
+                                    <div class="font-bold text-slate-800 text-sm">Ekonomi</div>
+                                    <div class="text-[11px] text-slate-500">Guru: Debie Lola</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- JUMAT -->
+                        <div
+                            class="day-card day-jumat bg-slate-50/70 rounded-2xl border border-slate-200/80 overflow-hidden flex flex-col hover:border-brand-300 transition-all duration-200 shadow-sm">
+                            <div
+                                class="bg-gradient-to-r from-rose-600 to-pink-600 text-white px-4 py-3 font-bold text-sm flex items-center justify-between">
+                                <span class="flex items-center gap-2"><i class="fa-regular fa-calendar"></i>
+                                    JUMAT</span>
+                                <span class="text-[11px] bg-white/20 px-2 py-0.5 rounded-full font-medium">7 JP</span>
+                            </div>
+                            <div class="p-3 space-y-2 text-xs flex-grow">
+                                <div
+                                    class="bg-rose-50 border border-rose-200/60 p-2 rounded-xl text-rose-900 font-semibold">
+                                    <div class="text-[10px] text-rose-700">06.30 - 07.15</div>
+                                    <div>Jumat Bersih / Sehat / Literasi</div>
+                                </div>
+
+                                <div class="bg-white p-2.5 rounded-xl border border-slate-100 shadow-2xs space-y-1">
+                                    <div class="flex items-center justify-between text-[10px] text-slate-400">
+                                        <span>JP 1 - 2 (07.15 - 08.45)</span>
+                                        <span class="bg-violet-50 text-violet-600 font-bold px-1.5 py-0.5 rounded">KD
+                                            22</span>
+                                    </div>
+                                    <div class="font-bold text-slate-800 text-sm">PKWU</div>
+                                    <div class="text-[11px] text-slate-500">Guru: Debie Lola</div>
+                                </div>
+
+                                <div
+                                    class="bg-slate-100/70 py-1 px-2.5 rounded-lg text-[11px] text-slate-500 text-center font-medium">
+                                    <i class="fa-solid fa-mug-saucer mr-1 text-slate-400"></i> Istirahat (08.45 - 09.15)
+                                </div>
+
+                                <div class="bg-white p-2.5 rounded-xl border border-slate-100 shadow-2xs space-y-1">
+                                    <div class="flex items-center justify-between text-[10px] text-slate-400">
+                                        <span>JP 3-4 (09.15 - 10.45)</span>
+                                        <span class="bg-sky-50 text-sky-600 font-bold px-1.5 py-0.5 rounded">KD
+                                            17</span>
+                                    </div>
+                                    <div class="font-bold text-slate-800 text-sm">PJOK</div>
+                                    <div class="text-[11px] text-slate-500">Guru: Sopyan</div>
+                                </div>
+
+                                <div class="bg-white p-2.5 rounded-xl border border-slate-100 shadow-2xs space-y-1">
+                                    <div class="flex items-center justify-between text-[10px] text-slate-400">
+                                        <span>JP 5 (10.45 - 11.30)</span>
+                                        <span class="bg-blue-50 text-blue-600 font-bold px-1.5 py-0.5 rounded">KD
+                                            3</span>
+                                    </div>
+                                    <div class="font-bold text-slate-800 text-sm">BIMBINGAN KONSELING</div>
+                                    <div class="text-[11px] text-slate-500">Guru: Katarina</div>
+                                </div>
+
+                                <div
+                                    class="bg-emerald-50 border border-emerald-200/60 p-2 rounded-xl text-emerald-900 font-semibold text-center">
+                                    <div class="text-[10px] text-emerald-700">11.30 - 12.30</div>
+                                    <div><i class="fa-solid fa-dove mr-1"></i> Jumat Ibadah</div>
+                                </div>
+
+                                <div
+                                    class="bg-slate-100/70 py-1 px-2.5 rounded-lg text-[11px] text-slate-500 text-center font-medium">
+                                    <i class="fa-solid fa-utensils mr-1 text-slate-400"></i> Istirahat (12.30 - 13.00)
+                                </div>
+
+                                <div class="bg-white p-2.5 rounded-xl border border-slate-100 shadow-2xs space-y-1">
+                                    <div class="flex items-center justify-between text-[10px] text-slate-400">
+                                        <span>JP 6 - 7 (13.00 - 14.30)</span>
+                                        <span class="bg-rose-50 text-rose-600 font-bold px-1.5 py-0.5 rounded">KD
+                                            18</span>
+                                    </div>
+                                    <div class="font-bold text-slate-800 text-sm">GEOGRAFI</div>
+                                    <div class="text-[11px] text-slate-500">Guru: Nur Fajar Sidik</div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Accordion: Daftar Kode Guru -->
+                    <div class="pt-6 border-t border-slate-100 space-y-3">
+                        <button onclick="toggleTeacherLegend()"
+                            class="flex items-center justify-between w-full text-left text-xs font-bold text-slate-700 bg-slate-50 hover:bg-brand-50 p-3.5 rounded-xl transition-colors border border-slate-200/60">
+                            <span class="flex items-center gap-2">
+                                <i class="fa-solid fa-clipboard-user text-brand-600 text-sm"></i> Referensi Kode Guru
+                                Pengajar (KD)
+                            </span>
+                            <i class="fa-solid fa-chevron-down text-slate-400 transition-transform duration-200"
+                                id="legend-chevron"></i>
+                        </button>
+                        <div id="teacher-legend"
+                            class="hidden grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-2 text-[11px] text-slate-600 p-4 bg-slate-50/70 rounded-2xl border border-slate-100">
+                            <div><strong class="text-brand-700">1:</strong> Adi Kristanto</div>
+                            <div><strong class="text-brand-700">2:</strong> Agus Salim</div>
+                            <div><strong class="text-brand-700">3:</strong> Cornel Kaban</div>
+                            <div><strong class="text-brand-700">4:</strong> Debie Lola</div>
+                            <div><strong class="text-brand-700">5:</strong> Diyana</div>
+                            <div><strong class="text-brand-700">6:</strong> Feby Unggul</div>
+                            <div><strong class="text-brand-700">7:</strong> Ihwan Arif P</div>
+                            <div><strong class="text-brand-700">8:</strong> Intan Dwi Apriliani</div>
+                            <div><strong class="text-brand-700">9:</strong> Iriwaty Japutra</div>
+                            <div><strong class="text-brand-700">10:</strong> Jefry Corpry YH</div>
+                            <div><strong class="text-brand-700">11:</strong> Katarina</div>
+                            <div><strong class="text-brand-700">12:</strong> Marji</div>
+                            <div><strong class="text-brand-700">13:</strong> Mulyawan</div>
+                            <div><strong class="text-brand-700">14:</strong> Nur Fajar Sidik</div>
+                            <div><strong class="text-brand-700">15:</strong> Purwanto</div>
+                            <div><strong class="text-brand-700">16:</strong> Rina M. Yoniton</div>
+                            <div><strong class="text-brand-700">17:</strong> Ruly Mediana</div>
+                            <div><strong class="text-brand-700">18:</strong> Sartika</div>
+                            <div><strong class="text-brand-700">19:</strong> Satibi</div>
+                            <div><strong class="text-brand-700">20:</strong> Sopyan</div>
+                            <div><strong class="text-brand-700">21:</strong> Toto Sunoto</div>
+                            <div><strong class="text-brand-700">22:</strong> Yahya Yanuardi</div>
+                            <div><strong class="text-brand-700">23:</strong> Eduardus Laot</div>
+                            <div><strong class="text-brand-700">24:</strong> Siti Lola Y.</div>
+                            <div><strong class="text-brand-700">25:</strong> Junaidi</div>
+                            <div><strong class="text-brand-700">26:</strong> Suwarni</div>
+                            <div><strong class="text-brand-700">27:</strong> Yuli Hastuti</div>
+                            <div><strong class="text-brand-700">28:</strong> Aprodita Radisti W.</div>
+                            <div><strong class="text-brand-700">29:</strong> Tri Rahmat Basuki</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- SUBTAB 2: MY SCHEDULE -->
+            <div id="schedule-subtab-my" class="schedule-subtab-content hidden space-y-6">
+                <div
+                    class="bg-white rounded-3xl p-8 sm:p-12 border border-brand-100 shadow-soft text-center space-y-6 max-w-2xl mx-auto">
+                    <div
+                        class="w-24 h-24 mx-auto rounded-3xl bg-gradient-to-tr from-brand-100 to-sky-50 text-brand-500 flex items-center justify-center text-4xl shadow-inner border border-brand-200/60">
+                        <i class="fa-solid fa-mug-hot"></i>
+                    </div>
+
+                    <div class="space-y-2">
+                        <span
+                            class="px-3.5 py-1 rounded-full text-xs font-bold bg-amber-100 text-amber-800 inline-flex items-center gap-1.5">
+                            <i class="fa-solid fa-bed"></i> Status Agenda Pribadi
+                        </span>
+                        <h3 class="text-3xl font-extrabold text-slate-900">MY SCHEDULE</h3>
+                    </div>
+
+                    <div class="bg-slate-50/80 rounded-2xl p-8 border-2 border-dashed border-slate-200 space-y-3">
+                        <p class="text-4xl sm:text-5xl font-extrabold text-slate-400 tracking-wider">
+                            Kosong
+                        </p>
+                        <p class="text-slate-500 text-sm sm:text-base font-medium italic">
+                            "karna saya nganggur"
+                        </p>
+                    </div>
+
+                    <p class="text-xs text-slate-400 max-w-md mx-auto">
+                        Tidak ada agenda tambahan, bimbingan, atau ekstrabimbingan pribadi untuk saat ini. Waktu santai
+                        & rehat sejenak! ☕✨
+                    </p>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- ASSIGNMENT DETAIL MODAL -->
+    <div id="detail-modal"
+        class="fixed inset-0 z-50 hidden flex items-center justify-center p-4 bg-slate-900/50 backdrop-blur-sm animate-fade-in">
+        <div
+            class="bg-white rounded-3xl max-w-lg w-full p-6 sm:p-8 space-y-6 shadow-2xl border border-brand-100 relative">
+
+            <button onclick="closeModal()"
+                class="absolute top-5 right-5 w-9 h-9 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-500 flex items-center justify-center transition-colors">
+                <i class="fa-solid fa-xmark text-lg"></i>
+            </button>
+
+            <div class="space-y-2">
+                <span id="modal-status"
+                    class="inline-block px-3 py-1 rounded-full text-[11px] font-bold bg-brand-100 text-brand-700">
+                    Status Tugas
+                </span>
+                <h3 id="modal-title" class="text-xl font-extrabold text-slate-900">
+                    Judul Tugas
+                </h3>
+            </div>
+
+            <div class="bg-brand-50/50 p-4 rounded-2xl border border-brand-100 text-slate-700 text-xs sm:text-sm leading-relaxed"
+                id="modal-body">
+                Deskripsi lengkap tugas akan tampil di sini...
+            </div>
+
+            <div class="flex items-center justify-end gap-3 pt-2">
+                <button onclick="closeModal()"
+                    class="px-5 py-2.5 rounded-xl border border-slate-200 text-slate-600 hover:bg-slate-50 text-xs font-semibold">
+                    Tutup
+                </button>
+                <a id="modal-link" href="#" target="_blank"
+                    class="px-5 py-2.5 rounded-xl bg-brand-500 hover:bg-brand-600 text-white text-xs font-semibold shadow-md transition-colors flex items-center gap-2">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i> Buka Tautan Tugas
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="bg-white border-t border-brand-100 mt-16 py-10">
+        <div
+            class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
+
+            <div class="flex items-center gap-3">
+                <div
+                    class="w-10 h-10 rounded-xl bg-brand-500 text-white flex items-center justify-center font-bold text-lg">
+                    AJ
+                </div>
+                <div>
+                    <p class="font-bold text-slate-900 text-sm">Angelica Jasmine Kartawinata</p>
+                    <p class="text-xs text-slate-500">Sekolah Cinta Kasih Tzu Chi &bull; Kumpulan Tugas Sekolah</p>
+                </div>
+            </div>
+
+            <div class="text-xs text-slate-500 text-center md:text-right space-y-1">
+<div class="text-xs text-slate-500 text-center md:text-right space-y-1">
+                <p>&copy; 2026 Angelica Jasmine Kartawinata. All rights reserved.</p>
+                <p class="text-slate-400">Dirancang dengan warna biru muda & putih yang ramah pengguna.</p>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- ========================================== -->
+    <!-- FLOATING GLOBAL MUSIC PLAYER WIDGET       -->
+    <!-- ========================================== -->
+    <audio id="global-audio" src="animal.mp3" preload="metadata"></audio>
+
+    <div id="music-player-container" class="fixed bottom-5 right-5 z-50 flex flex-col items-end">
+        <!-- COLLAPSED PILL BADGE -->
+        <button id="music-player-pill" onclick="toggleMusicWidget()"
+            class="hidden glass-player hover:bg-slate-800 text-white px-4 py-2.5 rounded-full shadow-2xl flex items-center gap-3 border border-brand-400/30 transition-all duration-300 transform hover:scale-105">
+            <div
+                class="w-6 h-6 rounded-full bg-brand-500 text-white flex items-center justify-center text-xs shadow-md">
+                <i class="fa-solid fa-music"></i>
+            </div>
+            <div class="text-left leading-tight pr-1">
+                <p class="text-xs font-bold text-slate-100" id="music-pill-title">Animal</p>
+                <p class="text-[10px] text-brand-300 font-medium" id="music-pill-status">Jeda ⏸️</p>
+            </div>
+            <i class="fa-solid fa-chevron-up text-xs text-slate-400"></i>
+        </button>
+
+        <!-- EXPANDED FULL PLAYER CARD -->
+        <div id="music-player-card"
+            class="glass-player text-white rounded-3xl p-4 sm:p-5 shadow-2xl max-w-xs sm:max-w-sm w-full space-y-4 relative border border-white/20 transition-all duration-300">
+
+            <!-- HEADER / MINIMIZE + TRACK COUNTER -->
+            <div class="flex items-center justify-between border-b border-white/10 pb-3">
+                <div class="flex items-center gap-2">
+                    <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse"></span>
+                    <span class="text-[11px] font-bold uppercase tracking-wider text-brand-300">Music Player</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <span id="music-track-counter" class="text-[10px] text-slate-400 font-mono font-bold bg-white/10 px-2 py-0.5 rounded-full">1 / 4</span>
+                    <button onclick="toggleMusicWidget()" title="Kecilkan Pemutar Musik"
+                        class="w-7 h-7 rounded-lg bg-white/10 hover:bg-white/20 text-slate-300 flex items-center justify-center transition-colors">
+                        <i class="fa-solid fa-minus text-xs"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- SONG INFO & VINYL ARTWORK -->
+            <div class="flex items-center gap-4">
+                <div class="relative w-14 h-14 sm:w-16 sm:h-16 flex-shrink-0">
+                    <div id="music-vinyl-disc"
+                        class="w-full h-full rounded-full bg-gradient-to-tr from-slate-900 via-slate-800 to-slate-900 border-2 border-slate-700 shadow-lg flex items-center justify-center relative overflow-hidden animate-vinyl-paused">
+                        <div class="absolute inset-1 rounded-full border border-white/10"></div>
+                        <div class="absolute inset-2.5 rounded-full border border-white/10"></div>
+                        <div
+                            class="w-6 h-6 rounded-full bg-brand-500 border-2 border-slate-900 flex items-center justify-center">
+                            <i class="fa-solid fa-compact-disc text-white text-[10px]"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="space-y-0.5 overflow-hidden min-w-0 flex-1">
+                    <h4 id="music-song-title" class="font-bold text-white text-sm sm:text-base truncate leading-snug" title="Animal">
+                        Animal
+                    </h4>
+                    <p id="music-song-artist" class="text-xs text-brand-200 truncate">KATSEYE</p>
+                    <p id="music-status-notice" class="text-[10px] text-amber-300 font-semibold hidden animate-pulse">
+                        Ketuk 🎵 untuk melanjutkan pemutaran
+                    </p>
+                </div>
+            </div>
+
+            <!-- PROGRESS SCRUBBER BAR -->
+            <div class="space-y-1.5 pt-1">
+                <input type="range" id="music-progress" min="0" max="100" value="0" step="0.1"
+                    oninput="seekAudio(this.value)" class="w-full music-slider">
+                <div class="flex justify-between text-[11px] font-mono text-slate-300 font-medium">
+                    <span id="music-time-display">00:00 / 00:00</span>
+                    <span class="text-brand-300 font-sans text-[10px]">Full Music</span>
+                </div>
+            </div>
+
+            <!-- PLAYER CONTROLS (Prev / Play / Next + Volume) -->
+            <div class="flex items-center justify-between pt-1">
+                <div class="flex items-center gap-1.5">
+                    <!-- PREV -->
+                    <button onclick="prevTrack()" title="Lagu Sebelumnya"
+                        class="w-8 h-8 rounded-full bg-white/10 hover:bg-white/20 text-slate-200 flex items-center justify-center transition-colors">
+                        <i class="fa-solid fa-backward-step text-xs"></i>
+                    </button>
+                    <!-- PLAY / PAUSE -->
+                    <button onclick="togglePlayPause()" title="Putar / Jeda"
+                        class="w-10 h-10 rounded-full bg-brand-500 hover:bg-brand-400 text-white flex items-center justify-center shadow-lg shadow-brand-500/40 transition-transform active:scale-95">
+                        <i id="music-play-icon" class="fa-solid fa-play text-sm ml-0.5"></i>
+                    </button>
+                    <!-- NEXT -->
+                    <button onclick="nextTrack()" title="Lagu Berikutnya"
+                        class="w-8 h-8 rounded-full bg-white/10 hover:bg-white/20 text-slate-200 flex items-center justify-center transition-colors">
+                        <i class="fa-solid fa-forward-step text-xs"></i>
+                    </button>
+                </div>
+
+                <div class="flex items-center gap-2 bg-white/5 px-3 py-1.5 rounded-full border border-white/10">
+                    <button onclick="toggleMute()" title="Mute / Unmute" class="hover:text-brand-300 transition-colors">
+                        <i id="music-vol-icon" class="fa-solid fa-volume-high text-brand-400 text-xs"></i>
+                    </button>
+                    <input type="range" id="music-volume" min="0" max="1" value="0.8" step="0.05"
+                        oninput="changeVolume(this.value)" class="w-16 music-slider">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- INTERACTIVE VANILLA JS SCRIPT -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
