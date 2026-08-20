@@ -1,0 +1,95 @@
+/* games/game2048/game2048.css */
+.g2048-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    box-sizing: border-box;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+.g2048-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 1rem;
+}
+.g2048-scores {
+    display: flex;
+    gap: 0.5rem;
+}
+.g2048-score-box {
+    background: #e2e8f0; /* slate-200 */
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    text-align: center;
+}
+.g2048-score-title {
+    font-size: 0.75rem;
+    color: #64748b; /* slate-500 */
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.g2048-score-value {
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: #0f172a; /* slate-900 */
+}
+.g2048-board {
+    background: #cbd5e1; /* slate-300 */
+    border-radius: 12px;
+    padding: 8px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 8px;
+    width: 100%;
+    max-width: 400px;
+    aspect-ratio: 1;
+    position: relative;
+    touch-action: none;
+}
+.g2048-cell {
+    background: #e2e8f0; /* slate-200 */
+    border-radius: 8px;
+}
+.g2048-tile {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 800;
+    font-size: 2rem;
+    border-radius: 8px;
+    color: #334155;
+    background: #f8fafc;
+    transition: transform 0.15s ease-in-out;
+}
+/* Tile Colors */
+.g2048-tile-2 { background: #f1f5f9; color: #334155; }
+.g2048-tile-4 { background: #e2e8f0; color: #334155; }
+.g2048-tile-8 { background: #fca5a5; color: #fff; }
+.g2048-tile-16 { background: #f87171; color: #fff; }
+.g2048-tile-32 { background: #ef4444; color: #fff; }
+.g2048-tile-64 { background: #dc2626; color: #fff; }
+.g2048-tile-128 { background: #fde047; color: #ca8a04; font-size: 1.5rem; }
+.g2048-tile-256 { background: #facc15; color: #fff; font-size: 1.5rem; }
+.g2048-tile-512 { background: #eab308; color: #fff; font-size: 1.5rem; }
+.g2048-tile-1024 { background: #ca8a04; color: #fff; font-size: 1.25rem; }
+.g2048-tile-2048 { background: #a16207; color: #fff; font-size: 1.25rem; }
+
+.g2048-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(255, 255, 255, 0.7);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(4px);
+    z-index: 10;
+    border-radius: 12px;
+}

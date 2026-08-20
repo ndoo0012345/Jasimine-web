@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bahasa Indonesia | Angelica Jasmine Kartawinata | Sekolah Cinta Kasih Tzu Chi</title>
+    <meta name="description"
+        content="Kumpulan karya dan tugas mata pelajaran Bahasa Indonesia Angelica Jasmine Kartawinata dari Sekolah Cinta Kasih Tzu Chi.">
+    <meta name="author" content="Angelica Jasmine Kartawinata">
+
+    <!-- Google Fonts: Inter & Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#f0f9ff',
+                            100: '#e0f2fe',
+                            200: '#bae6fd',
+                            300: '#7dd3fc',
+                            400: '#38bdf8',
+                            500: '#0ea5e9',
+                            600: '#0284c7',
+                            700: '#0369a1',
+                            800: '#075985',
+                            900: '#0c4a6e',
+                        },
+                        tzuchi: {
+                            blue: '#1e3a8a',
+                            sky: '#e2f1fd',
+                            softBg: '#f4f9fd',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'Inter', 'sans-serif'],
+                    },
+                    boxShadow: {
+                        'soft': '0 10px 30px -5px rgba(14, 165, 233, 0.08)',
+                        'card': '0 4px 20px 0 rgba(0, 0, 0, 0.04)',
+                        'card-hover': '0 12px 30px -5px rgba(14, 165, 233, 0.18)',
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body
+    class="bg-[#f8fafc] text-slate-800 font-sans antialiased min-h-screen flex flex-col justify-between selection:bg-brand-200 selection:text-brand-900">
+
+    <!-- TOP ANNOUNCEMENT / HEADER BADGE -->
+    <div
+        class="bg-gradient-to-r from-brand-600 via-brand-500 to-sky-400 text-white text-xs sm:text-sm py-2 px-4 text-center font-medium shadow-sm flex items-center justify-center gap-2">
+        <span class="bg-white/20 px-2 py-0.5 rounded-full text-[11px] font-semibold tracking-wide uppercase">Official
+            Site</span>
+        <span>Portofolio & Kumpulan Tugas Sekolah &bull; <strong>Sekolah Cinta Kasih Tzu Chi</strong></span>
+    </div>
+
+    <!-- MAIN NAVIGATION BAR -->
+    <header class="sticky top-0 z-40 glass-nav border-b border-brand-100 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+
+                <!-- BRAND / LOGO -->
+                <a href="index.html" class="flex items-center gap-3 group focus:outline-none">
+                    <img src="muak.jpeg" alt="Angelica Jasmine Kartawinata"
+                        class="w-11 h-11 rounded-2xl object-cover shadow-md shadow-brand-200 group-hover:scale-105 transition-transform duration-300 border border-brand-200">
+                    <div>
+                        <h1
+                            class="font-bold text-lg text-slate-900 leading-tight group-hover:text-brand-600 transition-colors">
+                            Angelica Jasmine K.
+                        </h1>
+                        <p class="text-xs text-brand-600 font-medium flex items-center gap-1">
+                            <i class="fa-solid font-normal fa-graduation-cap text-[10px]"></i> Sekolah Cinta Kasih Tzu
+                            Chi
+                        </p>
+                    </div>
+                </a>
+
+                <!-- DESKTOP MENU -->
+                <nav
+                    class="hidden md:flex items-center gap-1 bg-brand-50/70 p-1.5 rounded-2xl border border-brand-100/80">
+                    <a href="index.html" id="nav-dashboard"
+                        class="nav-btn px-5 py-2.5 rounded-xl text-sm font-semibold transition-all duration-200 text-slate-600 hover:text-brand-600 hover:bg-white/60">
+                        <i class="fa-solid fa-house-chimney text-xs mr-2"></i>Dashboard
+                    </a>
+                    <a href="profil.html" id="nav-profil"
+                        class="nav-btn px-5 py-2.5 rounded-xl text-sm font-semibold transition-all duration-200 text-slate-600 hover:text-brand-600 hover:bg-white/60">
+                        <i class="fa-solid fa-user-graduate text-xs mr-2"></i>Profil
+                    </a>
+                    <a href="informatika.html" id="nav-informatika"
+                        class="nav-btn px-5 py-2.5 rounded-xl text-sm font-semibold transition-all duration-200 text-slate-600 hover:text-brand-600 hover:bg-white/60">
+                        <i class="fa-solid fa-laptop-code text-xs mr-2"></i>Informatika
+                    </a>
+                    <a href="bahasa-indonesia.html" id="nav-bahasaindonesia"
+                        class="nav-btn px-5 py-2.5 rounded-xl text-sm font-semibold transition-all duration-200 text-brand-700 bg-white shadow-sm">
+                        <i class="fa-solid fa-book-bookmark text-xs mr-2"></i>Bahasa Indonesia
+                    </a>
+                    <a href="arcade.html" id="nav-arcade"
+                        class="nav-btn px-5 py-2.5 rounded-xl text-sm font-semibold transition-all duration-200 text-slate-600 hover:text-brand-600 hover:bg-white/60">
+                        <i class="fa-solid fa-gamepad text-xs mr-2"></i>Arcade
+                    </a>
+                    <a href="index.html#schedule" id="nav-schedule"
+                        class="nav-btn px-5 py-2.5 rounded-xl text-sm font-semibold transition-all duration-200 text-slate-600 hover:text-brand-600 hover:bg-white/60">
+                        <i class="fa-solid fa-calendar-days text-xs mr-2"></i>Schedule
+                    </a>
+                </nav>
+
+                <!-- SOCIAL QUICK LINKS & MOBILE BUTTON -->
+                <div class="flex items-center gap-2 sm:gap-3">
+                    <div class="hidden lg:flex items-center gap-2 border-r border-slate-200 pr-3 mr-1">
+                        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" title="Instagram"
+                            class="w-9 h-9 rounded-xl bg-slate-100 hover:bg-brand-100 hover:text-brand-600 text-slate-600 flex items-center justify-center transition-all duration-200">
+                            <i class="fa-brands fa-instagram text-base"></i>
+                        </a>
+                        <a href="https://github.com" target="_blank" rel="noopener noreferrer" title="GitHub"
+                            class="w-9 h-9 rounded-xl bg-slate-100 hover:bg-brand-100 hover:text-brand-600 text-slate-600 flex items-center justify-center transition-all duration-200">
+                            <i class="fa-brands fa-github text-base"></i>
+                        </a>
+                        <a href="mailto:angelica@example.com" title="Email Saya"
+                            class="w-9 h-9 rounded-xl bg-slate-100 hover:bg-brand-100 hover:text-brand-600 text-slate-600 flex items-center justify-center transition-all duration-200">
+                            <i class="fa-regular fa-envelope text-base"></i>
+                        </a>
+                    </div>
+
+                    <a href="profil.html#contact-section"
+                        class="hidden sm:inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-brand-500 hover:bg-brand-600 text-white text-xs sm:text-sm font-semibold shadow-md shadow-brand-200 transition-all duration-200">
+                        <i class="fa-regular fa-paper-plane"></i> Kontak
+                    </a>
+
+                    <!-- Mobile Menu Trigger -->
+                    <button id="mobile-menu-btn" onclick="toggleMobileMenu()"
+                        class="md:hidden w-10 h-10 rounded-xl bg-slate-100 hover:bg-brand-100 text-slate-700 flex items-center justify-center transition-colors">
+                        <i class="fa-solid fa-bars text-lg" id="mobile-menu-icon"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- MOBILE MENU DROPDOWN -->
+        <div id="mobile-menu"
+            class="hidden md:hidden border-t border-brand-100 bg-white px-4 pt-3 pb-6 space-y-2 shadow-xl animate-fade-in">
+            <a href="index.html" onclick="toggleMobileMenu();" id="mob-nav-dashboard"
+                class="w-full text-left px-4 py-3 rounded-xl font-semibold text-slate-700 hover:bg-slate-50 flex items-center gap-3">
+                <i class="fa-solid fa-house-chimney text-base w-6 text-center"></i> Dashboard
+            </a>
+            <a href="profil.html" onclick="toggleMobileMenu();" id="mob-nav-profil"
+                class="w-full text-left px-4 py-3 rounded-xl font-semibold text-slate-700 hover:bg-slate-50 flex items-center gap-3">
+                <i class="fa-solid fa-user-graduate text-base w-6 text-center"></i> Profil Saya
+            </a>
+            <a href="informatika.html" onclick="toggleMobileMenu();" id="mob-nav-informatika"
+                class="w-full text-left px-4 py-3 rounded-xl font-semibold text-slate-700 hover:bg-slate-50 flex items-center gap-3">
+                <i class="fa-solid fa-laptop-code text-base w-6 text-center"></i> Informatika
+            </a>
+            <a href="bahasa-indonesia.html" onclick="toggleMobileMenu();" id="mob-nav-bahasaindonesia"
+                class="w-full text-left px-4 py-3 rounded-xl font-semibold text-brand-600 bg-brand-50 flex items-center gap-3">
+                <i class="fa-solid fa-book-bookmark text-base w-6 text-center"></i> Bahasa Indonesia
+            </a>
+            <a href="arcade.html" onclick="toggleMobileMenu();" id="mob-nav-arcade"
+                class="w-full text-left px-4 py-3 rounded-xl font-semibold text-slate-700 hover:bg-slate-50 flex items-center gap-3">
+                <i class="fa-solid fa-gamepad text-base w-6 text-center"></i> Arcade
+            </a>
+            <a href="index.html#schedule" onclick="toggleMobileMenu();" id="mob-nav-schedule"
+                class="w-full text-left px-4 py-3 rounded-xl font-semibold text-slate-700 hover:bg-slate-50 flex items-center gap-3">
+                <i class="fa-solid fa-calendar-days text-base w-6 text-center"></i> Schedule
+            </a>
+
+            <div class="pt-4 border-t border-slate-100 flex items-center justify-around text-slate-600">
+                <a href="https://instagram.com" target="_blank"
+                    class="p-2 hover:text-brand-600 flex items-center gap-1.5 text-xs font-medium">
+                    <i class="fa-brands fa-instagram text-lg"></i> Instagram
+                </a>
+                <a href="https://linkedin.com" target="_blank"
+                    class="p-2 hover:text-brand-600 flex items-center gap-1.5 text-xs font-medium">
+                    <i class="fa-brands fa-linkedin text-lg"></i> LinkedIn
+                </a>
+                <a href="https://github.com" target="_blank"
+                    class="p-2 hover:text-brand-600 flex items-center gap-1.5 text-xs font-medium">
+                    <i class="fa-brands fa-github text-lg"></i> GitHub
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT CONTAINER -->
+    <main class="flex-grow max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-10">
+
+        <!-- ========================================== -->
+        <!-- TAB 4: BAHASA INDONESIA -->
+        <!-- ========================================== -->
+        <section id="tab-bahasaindonesia" class="space-y-8">
+
+            <!-- SECTION HEADER -->
+            <div
+                class="bg-white rounded-3xl p-6 sm:p-8 border border-brand-100 shadow-card flex flex-col md:flex-row md:items-center justify-between gap-6">
+                <div class="space-y-2">
+                    <div
+                        class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-100 text-blue-700 text-xs font-bold">
+                        <i class="fa-solid fa-book-bookmark"></i> Mata Pelajaran Bahasa Indonesia
+                    </div>
+                    <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900">Kumpulan Karya & Tugas Bahasa
+                        Indonesia</h2>
+                    <p class="text-xs sm:text-sm text-slate-500 max-w-xl">
+                        Dokumentasi teks laporan observasi, eksposisi, analisis puisi, resensi buku, serta artikel
+                        ilmiah siswa.
+                    </p>
+                </div>
+
+                <!-- SEARCH & FILTER -->
+                <div class="flex flex-col sm:flex-row gap-3">
+                    <div class="relative">
+                        <i class="fa-solid fa-magnifying-glass absolute left-3.5 top-3.5 text-slate-400 text-xs"></i>
+                        <input type="text" id="search-indo" onkeyup="filterBahasaIndonesia()"
+                            placeholder="Cari karya teks..."
+                            class="pl-9 pr-4 py-2.5 rounded-xl border border-slate-200 text-xs focus:outline-none focus:ring-2 focus:ring-brand-400 w-full sm:w-56 bg-slate-50">
+                    </div>
+                    <select id="filter-tag-indo" onchange="filterBahasaIndonesia()"
+                        class="px-3 py-2.5 rounded-xl border border-slate-200 text-xs focus:outline-none focus:ring-2 focus:ring-brand-400 bg-slate-50 text-slate-700 font-medium">
+                        <option value="all">Semua Jenis Teks</option>
+                        <option value="LHO">Teks LHO</option>
+                        <option value="Anekdot">Teks Anekdot</option>
+                        <option value="Biografi">Teks Biografi</option>
+                        <option value="Eksposisi">Teks Eksposisi</option>
+                        <option value="Sastra">Sastra & Puisi</option>
+                        <option value="Resensi">Resensi Buku</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- ARTIKEL UTAMA BAHASA INDONESIA -->
+            <article class="bg-white rounded-3xl p-6 sm:p-10 border border-brand-100 shadow-soft space-y-10">
+                <!-- Article Header -->
+                <div class="space-y-4 border-b border-slate-100 pb-6">
+                    <div class="flex flex-wrap items-center gap-2">
+                        <span
+                            class="px-3 py-1 rounded-full text-xs font-bold bg-blue-600 text-white shadow-sm flex items-center gap-1.5">
+                            <i class="fa-solid fa-book-open"></i> Artikel Pembelajaran Bahasa Indonesia
+                        </span>
+                        <span
+                            class="px-3 py-1 rounded-full text-xs font-semibold bg-blue-50 text-blue-700 border border-blue-100">
+                            Teks LHO &bull; Teks Anekdot &bull; Teks Biografi
+                        </span>
+                        <span class="text-xs text-slate-400 ml-auto flex items-center gap-1">
+                            <i class="fa-regular fa-clock"></i> 9 Menit Baca
+                        </span>
+                    </div>
+
+                    <h3 class="text-2xl sm:text-4xl font-extrabold text-slate-900 leading-tight">
+                        Eksplorasi Ragam Genre Teks Bahasa Indonesia: Memahami Teks LHO, Anekdot, dan Biografi
+                    </h3>
+
+                    <div class="flex items-center gap-3 pt-2">
+                        <img src="muak.jpeg" alt="Angelica Jasmine Kartawinata"
+                            class="w-10 h-10 rounded-full object-cover shadow-sm border border-brand-100">
+                        <div>
+                            <p class="text-xs sm:text-sm font-bold text-slate-900">Angelica Jasmine Kartawinata</p>
+                            <p class="text-[11px] sm:text-xs text-slate-500">Siswa Cinta Kasih Tzu Chi &bull; Karya
+                                Literasi Bahasa Indonesia</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Article Content Body -->
+                <div
+                    class="prose prose-slate max-w-none space-y-10 text-sm sm:text-base text-slate-700 leading-relaxed">
+
+                    <!-- Intro Box -->
+                    <div
+                        class="bg-gradient-to-r from-blue-50 via-sky-50 to-white p-5 sm:p-7 rounded-2xl border-l-4 border-blue-500 space-y-3 shadow-sm">
+                        <h4 class="font-bold text-blue-900 text-base sm:text-lg flex items-center gap-2">
+                            <i class="fa-solid fa-lightbulb text-amber-500"></i> Pengantar Ragam Genre Teks Literasi
+                        </h4>
+                        <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                            Dalam pembelajaran Bahasa Indonesia modern, pemahaman mengenai ragam genre teks merupakan
+                            fondasi utama dalam mengasah keterampilan berpikir kritis, kepekaan sosial, dan ekspresi
+                            literasi. Tiga genre teks utama yang memiliki karakteristik, struktur, serta fungsi
+                            komunikasi khas adalah <strong>Teks Laporan Hasil Observasi (LHO)</strong>, <strong>Teks
+                                Anekdot</strong>, dan <strong>Teks Biografi</strong>. Artikel ini mengulas secara
+                            komprehensif struktur, kaidah kebahasaan, dan nilai edukatif dari ketiga teks tersebut.
+                        </p>
+                    </div>
+
+                    <!-- ========================================== -->
+                    <!-- SECTION 1: TEKS LAPORAN HASIL OBSERVASI (LHO) -->
+                    <!-- ========================================== -->
+                    <div class="space-y-4 pt-2 border-t border-slate-100">
+                        <h4 class="text-xl sm:text-2xl font-extrabold text-slate-900 flex items-center gap-3">
+                            <span
+                                class="w-9 h-9 rounded-xl bg-blue-100 text-blue-600 flex items-center justify-center text-base font-bold shadow-sm">1</span>
+                            Teks Laporan Hasil Observasi (LHO): Pengamatan Faktual & Objektif
+                        </h4>
+
+                        <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                            <strong>Teks Laporan Hasil Observasi (LHO)</strong> adalah jenis teks ilmiah
+                            naratif-deskriptif yang menyajikan informasi secara sistematis, objektif, dan faktual
+                            mengenai suatu objek, fenomena alam, lingkungan sosial, atau benda mati berdasarkan hasil
+                            pengamatan langsung di lapangan. Teks LHO ditulis secara jujur tanpa melibatkan pandangan
+                            subjektif, opini pribadi, atau dugaan tanpa bukti riil dari penulisnya.
+                        </p>
+
+                        <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                            Struktur penyusunan Teks LHO secara umum terbagi menjadi tiga bagian utama. Bagian pertama
+                            adalah <em>Pernyataan Umum / Klasifikasi</em>, yang berisi pembuka, batasan pengertian, dan
+                            pengelompokan umum objek yang diobservasi. Bagian kedua adalah <em>Deskripsi Bagian</em>,
+                            yang memaparkan rincian detail mengenai ciri fisik, bagian-bagian spesifik, habitat, atau
+                            sifat khas objek. Bagian ketiga adalah <em>Deskripsi Manfaat / Kesimpulan</em>, yang
+                            menyajikan fungsi, kegunaan, atau peran penting keberadaan objek tersebut bagi lingkungan
+                            dan kehidupan manusia.
+                        </p>
+
+                        <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                            Dari sisi kaidah kebahasaan, Teks LHO memiliki ciri khas penggunaan kata benda (nomina)
+                            netral, verba relasional (seperti <em>adalah</em>, <em>merupakan</em>, <em>terdiri
+                                atas</em>), verba pengelompokan, serta kalimat definisi dan deskripsi yang jelas. Selain
+                            itu, Teks LHO kaya akan penggunaan kosakata teknis atau istilah ilmiah yang sesuai dengan
+                            disiplin ilmu objek yang diteliti, seperti istilah keanekaragaman hayati, istilah kebersihan
+                            ekologi, atau terminologi kesehatan.
+                        </p>
+
+                        <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                            Pembelajaran Teks LHO di Sekolah Cinta Kasih Tzu Chi melatih siswa untuk mengasah panca
+                            indera, meningkatkan kecermatan pengamatan faktual, dan menumbuhkan rasa peduli terhadap
+                            kelestarian lingkungan. Melalui penyusunan LHO, siswa dibiasakan menyajikan data hasil
+                            pengamatan riil di lingkungan sekolah dan masyarakat secara ilmiah, akurat, dan dapat
+                            dipertanggungjawabkan.
+                        </p>
+
+                        <!-- FOTO / GAMBAR SECTION TEKS LHO -->
+                        <figure
+                            class="my-6 rounded-2xl overflow-hidden border border-slate-200 bg-slate-50 p-3.5 space-y-2 shadow-sm">
+                            <img src="assets/images/teks_lho.png" alt="Konsep Teks Laporan Hasil Observasi LHO"
+                                class="w-full h-56 sm:h-72 object-cover rounded-xl shadow-inner">
+                            <figcaption class="text-xs text-center text-slate-500 font-semibold tracking-wide">
+                                Gambar 1.1: Ilustrasi Konsep Teks Laporan Hasil Observasi (LHO), Pengamatan Faktual &
+                                Penelitian Ilmiah
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                    <!-- ========================================== -->
+                    <!-- SECTION 2: TEKS ANEKDOT -->
+                    <!-- ========================================== -->
+                    <div class="space-y-4 pt-4 border-t border-slate-100">
+                        <h4 class="text-xl sm:text-2xl font-extrabold text-slate-900 flex items-center gap-3">
+                            <span
+                                class="w-9 h-9 rounded-xl bg-amber-100 text-amber-600 flex items-center justify-center text-base font-bold shadow-sm">2</span>
+                            Teks Anekdot: Cerita Singkat Lucu Berbalut Kritik & Sindiran Sosial
+                        </h4>
+
+                        <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                            <strong>Teks Anekdot</strong> adalah karangan cerita singkat yang menggelitik, lucu, dan
+                            mengesankan, yang ditulis dengan tujuan menyampaikan kritik sosial atau sindiran terhadap
+                            fenomena bermasyarakat, kebiasaan keliru, layanan publik, maupun perilaku tokoh umum.
+                            Meskipun dibungkus dalam bentuk humor dan kejenakaan, teks anekdot mengandung pesan moral,
+                            kebenaran sosial, dan amanat kritis yang sangat mendalam.
+                        </p>
+
+                        <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                            Struktur Teks Anekdot terdiri dari lima bagian yang saling berurutan secara logis, yaitu:
+                            <em>Abstraksi</em> (gambaran awal latar belakang cerita), <em>Orientasi</em> (pengenalan
+                            tokoh, suasana, dan awal mula terjadinya masalah), <em>Krisis</em> (bagian inti yang memuat
+                            puncak masalah unik, keanehan, atau kekonyolan), <em>Reaksi</em> (tanggapan atau cara tokoh
+                            menyelesaikan masalah krisis secara menggelitik), dan <em>Koda</em> (bagian penutup berupa
+                            kesimpulan atau perubahan sikap tokoh).
+                        </p>
+
+                        <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                            Kaidah kebahasaan Teks Anekdot ditandai dengan penggunaan kalimat retoris (pertanyaan yang
+                            tidak membutuhkan jawaban), konjungsi urutan waktu kronologis (seperti <em>lalu</em>,
+                            <em>kemudian</em>, <em>akhirnya</em>), kata kerja aksi, kalimat seru, serta dialok
+                            komunikatif. Gaya bahasa yang digunakan sering memanfaatkan majas sindiran halus seperti
+                            ironi dan sinisme yang santun agar kritik tetap terasa elegan dan tidak melukai norma
+                            kesopanan.
+                        </p>
+
+                        <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                            Melalui penulisan teks anekdot, siswa diajak untuk bersuara dan menyampaikan aspirasi
+                            mengenai isu-isu di sekitarnya secara cerdas dan konstruktif. Anekdot mengajarkan kita bahwa
+                            menyampaikan kebenaran tidak harus selalu dengan kemarahan, melainkan bisa diutarakan
+                            melalui humor intelektual yang menyadarkan pembaca akan pentingnya perbaikan diri dan
+                            keadilan sosial.
+                        </p>
+
+                        <!-- FOTO / GAMBAR SECTION TEKS ANEKDOT -->
+                        <figure
+                            class="my-6 rounded-2xl overflow-hidden border border-amber-200/80 bg-amber-50/40 p-3.5 space-y-2 shadow-sm">
+                            <img src="assets/images/teks_anekdot.png" alt="Konsep Teks Anekdot & Humor Kritis"
+                                class="w-full h-56 sm:h-72 object-cover rounded-xl shadow-inner">
+                            <figcaption class="text-xs text-center text-slate-600 font-semibold tracking-wide">
+                                Gambar 2.1: Visualisasi Seni Humor, Kritik Sosial, & Penyampaian Pesan Santun Teks
+                                Anekdot
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                    <!-- ========================================== -->
+                    <!-- SECTION 3: TEKS BIOGRAFI -->
+                    <!-- ========================================== -->
+                    <div class="space-y-4 pt-4 border-t border-slate-100">
+                        <h4 class="text-xl sm:text-2xl font-extrabold text-slate-900 flex items-center gap-3">
+                            <span
+                                class="w-9 h-9 rounded-xl bg-emerald-100 text-emerald-600 flex items-center justify-center text-base font-bold shadow-sm">3</span>
+                            Teks Biografi: Meneladani Kisah Perjuangan & Inspirasi Tokoh
+                        </h4>
+
+                        <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                            <strong>Teks Biografi</strong> adalah karya narasi ilmiah yang mengisahkan riwayat hidup,
+                            alur perjuangan, tantangan, serta pencapaian bersejarah dari seorang tokoh inspiratif yang
+                            ditulis oleh orang lain. Biografi bukan sekadar daftar riwayat hidup singkat, melainkan
+                            sebuah rekaman kisah inspiratif yang menggali nilai-nilai kemanusiaan, keteguhan hati, dan
+                            filosofi hidup tokoh agar dapat diteladani oleh pembaca.
+                        </p>
+
+                        <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                            Struktur pembangun Teks Biografi terdiri dari tiga komponen utama: <em>Orientasi</em>,
+                            <em>Peristiwa dan Masalah Penting</em>, serta <em>Reorientasi</em>. Orientasi memuat
+                            pengenalan awal tokoh, tempat tanggal lahir, latar belakang keluarga, dan pendidikan awal.
+                            Peristiwa penting menyajikan rincian perjalanan perjuangan tokoh saat menghadapi rintangan
+                            hidup, prestasi yang diraih, dan kontribusi besarnya. Sementara Reorientasi berisi pandangan
+                            penulis, simpulan karya, serta refleksi atas nilai keteladanan tokoh.
+                        </p>
+
+                        <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                            Kaidah kebahasaan Teks Biografi diwarnai oleh penggunaan pronomina persona ketiga (seperti
+                            <em>ia</em>, <em>dia</em>, <em>beliau</em>), kata kerja tindakan (*action verbs*) untuk
+                            memaparkan peristiwa, kata kerja pasif, kata kerja mental, serta kata sifat keteladanan
+                            (seperti <em>gigih</em>, <em>dermawan</em>, <em>pantang menyerah</em>). Penggunaan
+                            keterangan waktu dan penanda urutan peristiwa juga sangat dominan untuk menjaga alur
+                            kronologis cerita.
+                        </p>
+
+                        <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                            Bagi para pelajar di Sekolah Cinta Kasih Tzu Chi, mempelajari Teks Biografi memberikan
+                            dorongan moral dan spiritual yang kuat. Dengan mendalami perjalanan hidup pahlawan nasional,
+                            ilmuwan, atau tokoh kemanusiaan, siswa terdorong untuk menanamkan sifat empati,
+                            kedisiplinan, semangat belajar tinggi, serta nilai bersumbangsih tanpa pamrih demi kebaikan
+                            sesama.
+                        </p>
+
+                        <!-- FOTO / GAMBAR SECTION TEKS BIOGRAFI -->
+                        <figure
+                            class="my-6 rounded-2xl overflow-hidden border border-emerald-200/80 bg-emerald-50/40 p-3.5 space-y-2 shadow-sm">
+                            <img src="assets/images/teks_biografi.png" alt="Konsep Teks Biografi Tokoh Inspiratif"
+                                class="w-full h-56 sm:h-72 object-cover rounded-xl shadow-inner">
+                            <figcaption class="text-xs text-center text-slate-600 font-semibold tracking-wide">
+                                Gambar 3.1: Visualisasi Keteladanan Tokoh, Perjalanan Perjuangan Hidup, & Nilai Moral
+                                Teks Biografi
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                    <!-- ========================================== -->
+                    <!-- SECTION 4: KESIMPULAN ARTIKEL -->
+                    <!-- ========================================== -->
+                    <div class="space-y-4 pt-6 border-t border-slate-100">
+                        <h4 class="text-xl sm:text-2xl font-extrabold text-slate-900 flex items-center gap-3">
+                            <span
+                                class="w-9 h-9 rounded-xl bg-purple-100 text-purple-600 flex items-center justify-center text-base font-bold shadow-sm">4</span>
+                            Kesimpulan: Sintesis Membaca & Menulis Kritis Berbasis Genre
+                        </h4>
+
+                        <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                            Eksplorasi mendalam terhadap Teks Laporan Hasil Observasi (LHO), Teks Anekdot, dan Teks
+                            Biografi membuktikan bahwa Bahasa Indonesia merupakan media berpikir yang sangat luas dan
+                            berjenjang. Ketiga genre teks ini melatih aspek literasi yang saling melengkapi: Teks LHO
+                            melatih ketajaman observasi faktual berbasis data, Teks Anekdot mengasah kepekaan sosial dan
+                            keberanian kritis yang santun, sedangkan Teks Biografi menumbuhkan karakter mulia dan
+                            semangat bersumbangsih bagi masyarakat.
+                        </p>
+
+                        <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                            Penerapan penguasaan ketiga genre teks ini dalam kegiatan pembelajaran Bahasa Indonesia di
+                            Sekolah Cinta Kasih Tzu Chi memegang peranan kunci dalam melahirkan generasi muda yang
+                            cerdas dan berbudaya. Para siswa tidak hanya diajarkan untuk memahami sintaksis dan kaidah
+                            bahasa, tetapi juga dilatih untuk menuangkan pemikiran kritis, empati sosial, serta
+                            integritas ilmiah dalam bentuk karya tulis yang berkualitas.
+                        </p>
+
+                        <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                            Sebagai penutup, penguasaan atas struktur dan ciri kebahasaan Teks LHO, Anekdot, dan
+                            Biografi akan menjadi bekal berharga bagi siswa dalam menghadapi dunia akademik maupun
+                            kehidupan bermasyarakat. Dengan memadukan objekativitas data, kejujuran berpikir, kehalusan
+                            tutur kata, dan peneladanan nilai luhur para tokoh, kita dapat mewujudkan budaya literasi
+                            bangsa yang unggul, berkarakter, dan bermanfaat bagi kemanusiaan.
+                        </p>
+                    </div>
+
+                </div>
+
+                <!-- Article Footer / Tags -->
+                <div class="pt-6 border-t border-slate-100 flex flex-wrap items-center justify-between gap-4 text-xs">
+                    <div class="flex flex-wrap items-center gap-2">
+                        <span class="text-slate-400 font-semibold">Kata Kunci Utama:</span>
+                        <span class="bg-slate-100 text-slate-700 px-3 py-1 rounded-lg font-medium">#TeksLHO</span>
+                        <span class="bg-slate-100 text-slate-700 px-3 py-1 rounded-lg font-medium">#TeksAnekdot</span>
+                        <span class="bg-slate-100 text-slate-700 px-3 py-1 rounded-lg font-medium">#TeksBiografi</span>
+                        <span
+                            class="bg-slate-100 text-slate-700 px-3 py-1 rounded-lg font-medium">#BahasaIndonesia</span>
+                        <span
+                            class="bg-slate-100 text-slate-700 px-3 py-1 rounded-lg font-medium">#LiterasiSekolah</span>
+                    </div>
+                    <button
+                        onclick="openModal('Artikel Bahasa Indonesia: LHO, Anekdot & Biografi', 'Panduan literasi komprehensif mengenai struktur, kaidah kebahasaan, dan fungsi utama dari Teks Laporan Hasil Observasi (LHO), Teks Anekdot, dan Teks Biografi.', '#', 'Artikel Literasi Terpublikasi 2026')"
+                        class="px-5 py-2.5 rounded-xl bg-blue-50 text-blue-700 hover:bg-blue-100 font-bold transition-colors flex items-center gap-2">
+                        <i class="fa-solid fa-expand text-xs"></i> Pratinjau Ringkasan Modal
+                    </button>
+                </div>
+            </article>
+
+            <!-- CARDS GRID -->
+            <div id="indo-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                <!-- KARYA 1 -->
+                <div class="indo-card bg-white rounded-3xl border border-slate-100 shadow-card hover:shadow-card-hover transition-all duration-300 overflow-hidden flex flex-col justify-between"
+                    data-category="LHO" data-title="Teks Laporan Hasil Observasi Lingkungan Sekolah Tzu Chi">
+                    <div class="p-6 space-y-4">
+                        <div class="flex items-center justify-between">
+                            <span class="px-2.5 py-1 rounded-lg text-[11px] font-bold bg-blue-100 text-blue-700">Teks
+                                LHO</span>
+                            <span class="text-[11px] text-slate-400 font-medium">Tugas 01 &bull; Sem 1</span>
+                        </div>
+                        <h3 class="font-bold text-slate-900 text-base leading-snug hover:text-brand-600 cursor-pointer"
+                            onclick="openModal('Teks LHO: Kebersihan Lingkungan', 'Laporan lengkap hasil pengamatan fasilitas pemilahan sampah dan kelestarian tanaman di lingkungan Sekolah Cinta Kasih Tzu Chi.', '#', 'Terverifikasi Guru')">
+                            Laporan Hasil Observasi: Kelestarian Lingkungan Sekolah Tzu Chi
+                        </h3>
+                        <blockquote
+                            class="text-slate-500 text-xs italic bg-slate-50 p-3 rounded-xl border-l-2 border-brand-400">
+                            "Penerapan prinsip ramah lingkungan dan pemilahan sampah organik serta anorganik di
+                            lingkungan sekolah..."
+                        </blockquote>
+                    </div>
+
+                    <div
+                        class="px-6 py-4 bg-slate-50/70 border-t border-slate-100 flex items-center justify-between text-xs">
+                        <span class="font-semibold text-slate-500"><i
+                                class="fa-regular fa-file-lines text-blue-500 mr-1"></i> Teks Observasi</span>
+                        <button
+                            onclick="openModal('Teks LHO: Kelestarian Lingkungan Sekolah Tzu Chi', 'Penyusunan Teks Laporan Hasil Observasi (LHO) berdasarkan pengamatan langsung di area Sekolah Cinta Kasih Tzu Chi. Mencakup pernyataan umum, deskripsi bagian, dan deskripsi manfaat.', '#', 'Nilai Sempurna: 96/100')"
+                            class="font-bold text-brand-600 hover:text-brand-800 transition-colors">
+                            Baca Karya <i class="fa-solid fa-chevron-right text-[10px] ml-1"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- KARYA ANEKDOT -->
+                <div class="indo-card bg-white rounded-3xl border border-slate-100 shadow-card hover:shadow-card-hover transition-all duration-300 overflow-hidden flex flex-col justify-between"
+                    data-category="Anekdot" data-title="Teks Anekdot: Antrean Tanpa Suara & Kedisiplinan Publik">
+                    <div class="p-6 space-y-4">
+                        <div class="flex items-center justify-between">
+                            <span class="px-2.5 py-1 rounded-lg text-[11px] font-bold bg-amber-100 text-amber-700">Teks
+                                Anekdot</span>
+                            <span class="text-[11px] text-slate-400 font-medium">Tugas Anekdot &bull; Sem 1</span>
+                        </div>
+                        <h3 class="font-bold text-slate-900 text-base leading-snug hover:text-brand-600 cursor-pointer"
+                            onclick="openModal('Teks Anekdot: Antrean Tanpa Suara', 'Cerita humor sindiran mengenai disiplin antrean dan pentingnya kesadaran diri di fasilitas pelayanan publik.', '#', 'Terverifikasi Guru')">
+                            Teks Anekdot: Antrean Tanpa Suara & Kedisiplinan Publik
+                        </h3>
+                        <blockquote
+                            class="text-slate-500 text-xs italic bg-slate-50 p-3 rounded-xl border-l-2 border-amber-400">
+                            "Ketika papan petunjuk tertulis lebih didengar daripada imbauan pengeras suara..."
+                        </blockquote>
+                    </div>
+
+                    <div
+                        class="px-6 py-4 bg-slate-50/70 border-t border-slate-100 flex items-center justify-between text-xs">
+                        <span class="font-semibold text-slate-500"><i
+                                class="fa-solid fa-masks-theater text-amber-500 mr-1"></i> Humor & Kritik</span>
+                        <button
+                            onclick="openModal('Teks Anekdot: Antrean Tanpa Suara', 'Struktur lengkap Teks Anekdot mencakup Abstraksi, Orientasi, Krisis, Reaksi, dan Koda dengan sindiran positif mengenai ketertiban umum.', '#', 'Nilai: 95/100')"
+                            class="font-bold text-brand-600 hover:text-brand-800 transition-colors">
+                            Baca Karya <i class="fa-solid fa-chevron-right text-[10px] ml-1"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- KARYA BIOGRAFI -->
+                <div class="indo-card bg-white rounded-3xl border border-slate-100 shadow-card hover:shadow-card-hover transition-all duration-300 overflow-hidden flex flex-col justify-between"
+                    data-category="Biografi" data-title="Teks Biografi: Perjalanan Perjuangan Master Cheng Yen">
+                    <div class="p-6 space-y-4">
+                        <div class="flex items-center justify-between">
+                            <span
+                                class="px-2.5 py-1 rounded-lg text-[11px] font-bold bg-emerald-100 text-emerald-700">Teks
+                                Biografi</span>
+                            <span class="text-[11px] text-slate-400 font-medium">Tugas Biografi &bull; Sem 1</span>
+                        </div>
+                        <h3 class="font-bold text-slate-900 text-base leading-snug hover:text-brand-600 cursor-pointer"
+                            onclick="openModal('Teks Biografi Inspiratif', 'Biografi lengkap perjalanan hidup, nilai welas asih, dan dedikasi sosial kemanusiaan Master Cheng Yen.', '#', 'Terverifikasi Guru')">
+                            Teks Biografi: Keteladanan Perjuangan Master Cheng Yen
+                        </h3>
+                        <blockquote
+                            class="text-slate-500 text-xs italic bg-slate-50 p-3 rounded-xl border-l-2 border-emerald-400">
+                            "Langkah kecil ketulusan hati yang menginspirasi jutaan relawan di seluruh penjuru dunia..."
+                        </blockquote>
+                    </div>
+
+                    <div
+                        class="px-6 py-4 bg-slate-50/70 border-t border-slate-100 flex items-center justify-between text-xs">
+                        <span class="font-semibold text-slate-500"><i
+                                class="fa-solid fa-user-tie text-emerald-500 mr-1"></i> Kisah Tokoh</span>
+                        <button
+                            onclick="openModal('Teks Biografi: Master Cheng Yen', 'Penulisan Biografi tokoh yang memuat Orientasi latar belakang, Peristiwa penting perjuangan pendirian Yayasan Tzu Chi, serta Reorientasi keteladanan moral.', '#', 'Nilai: 98/100')"
+                            class="font-bold text-brand-600 hover:text-brand-800 transition-colors">
+                            Baca Karya <i class="fa-solid fa-chevron-right text-[10px] ml-1"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- KARYA 2 -->
+                <div class="indo-card bg-white rounded-3xl border border-slate-100 shadow-card hover:shadow-card-hover transition-all duration-300 overflow-hidden flex flex-col justify-between"
+                    data-category="Eksposisi" data-title="Teks Eksposisi: Peran Teknologi dalam Pembelajaran Pelajar">
+                    <div class="p-6 space-y-4">
+                        <div class="flex items-center justify-between">
+                            <span class="px-2.5 py-1 rounded-lg text-[11px] font-bold bg-amber-100 text-amber-700">Teks
+                                Eksposisi</span>
+                            <span class="text-[11px] text-slate-400 font-medium">Tugas 02 &bull; Sem 1</span>
+                        </div>
+                        <h3 class="font-bold text-slate-900 text-base leading-snug hover:text-brand-600 cursor-pointer"
+                            onclick="openModal('Teks Eksposisi: Peran Teknologi', 'Argumentasi kritis mengenai pentingnya literasi digital dan pemanfaatan teknologi secara bijak di kalangan pelajar.', '#', 'Terverifikasi')">
+                            Teks Eksposisi: Peran Teknologi & Bijak Berinteraksi Digital
+                        </h3>
+                        <blockquote
+                            class="text-slate-500 text-xs italic bg-slate-50 p-3 rounded-xl border-l-2 border-amber-400">
+                            "Teknologi bukan sekadar alat pembantu, melainkan jembatan menuju wawasan global jika
+                            dimanfaatkan secara positif..."
+                        </blockquote>
+                    </div>
+
+                    <div
+                        class="px-6 py-4 bg-slate-50/70 border-t border-slate-100 flex items-center justify-between text-xs">
+                        <span class="font-semibold text-slate-500"><i
+                                class="fa-solid fa-pen-fancy text-amber-500 mr-1"></i> Artikel Opini</span>
+                        <button
+                            onclick="openModal('Teks Eksposisi: Peran Teknologi & Bijak Berinteraksi Digital', 'Tesis, deretan argumen pendukung, dan penegasan ulang mengenai integrasi teknologi dalam pendidikan modern yang santun dan beretika.', '#', 'Telah Dinilai: 93/100')"
+                            class="font-bold text-brand-600 hover:text-brand-800 transition-colors">
+                            Baca Karya <i class="fa-solid fa-chevron-right text-[10px] ml-1"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- KARYA 3 -->
+                <div class="indo-card bg-white rounded-3xl border border-slate-100 shadow-card hover:shadow-card-hover transition-all duration-300 overflow-hidden flex flex-col justify-between"
+                    data-category="Sastra" data-title="Antologi Puisi Modern: Meniti Harapan dan Cinta Kasih">
+                    <div class="p-6 space-y-4">
+                        <div class="flex items-center justify-between">
+                            <span class="px-2.5 py-1 rounded-lg text-[11px] font-bold bg-rose-100 text-rose-700">Sastra
+                                & Puisi</span>
+                            <span class="text-[11px] text-slate-400 font-medium">Tugas 03 &bull; Sem 1</span>
+                        </div>
+                        <h3 class="font-bold text-slate-900 text-base leading-snug hover:text-brand-600 cursor-pointer"
+                            onclick="openModal('Antologi Puisi: Meniti Harapan', 'Kumpulan karya puisi kontemporer yang mengekspresikan nilai kemanusiaan, ketulusan hati, dan cita-cita.', '#', 'Terverifikasi')">
+                            Antologi Puisi: Meniti Harapan & Tetes Cinta Kasih
+                        </h3>
+                        <blockquote
+                            class="text-slate-500 text-xs italic bg-slate-50 p-3 rounded-xl border-l-2 border-rose-400">
+                            "Di bawah naungan awan biru lembut, terukir cita-cita dalam tulusnya senyuman
+                            bersumbangsih..."
+                        </blockquote>
+                    </div>
+
+                    <div
+                        class="px-6 py-4 bg-slate-50/70 border-t border-slate-100 flex items-center justify-between text-xs">
+                        <span class="font-semibold text-slate-500"><i
+                                class="fa-solid fa-feather text-rose-500 mr-1"></i> Karya Sastra</span>
+                        <button
+                            onclick="openModal('Antologi Puisi: Meniti Harapan & Tetes Cinta Kasih', 'Karya sastra berupa kumpulan bait puisi berima bebas dengan tema utama nilai kemanusiaan dan cinta kasih Tzu Chi.', '#', 'Telah Dinilai: 97/100')"
+                            class="font-bold text-brand-600 hover:text-brand-800 transition-colors">
+                            Baca Karya <i class="fa-solid fa-chevron-right text-[10px] ml-1"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- KARYA 4 -->
+                <div class="indo-card bg-white rounded-3xl border border-slate-100 shadow-card hover:shadow-card-hover transition-all duration-300 overflow-hidden flex flex-col justify-between"
+                    data-category="Resensi" data-title="Resensi Buku: Kumpulan Kisah Inspiratif Master Cheng Yen">
+                    <div class="p-6 space-y-4">
+                        <div class="flex items-center justify-between">
+                            <span class="px-2.5 py-1 rounded-lg text-[11px] font-bold bg-teal-100 text-teal-700">Resensi
+                                Buku</span>
+                            <span class="text-[11px] text-slate-400 font-medium">Tugas 04 &bull; Sem 1</span>
+                        </div>
+                        <h3 class="font-bold text-slate-900 text-base leading-snug hover:text-brand-600 cursor-pointer"
+                            onclick="openModal('Resensi Buku Inspiratif', 'Ulasan kritis mengenai buku pembelajaran hidup, kelebihan, kekurangan, serta pesan moral yang dikandungnya.', '#', 'Terverifikasi')">
+                            Resensi Buku: Jejak Kemanusiaan & Pembelajaran Hidup
+                        </h3>
+                        <blockquote
+                            class="text-slate-500 text-xs italic bg-slate-50 p-3 rounded-xl border-l-2 border-teal-400">
+                            "Buku ini memberikan perspektif mendalam mengenai arti pentingnya kesederhanaan dan
+                            kepedulian sosial..."
+                        </blockquote>
+                    </div>
+
+                    <div
+                        class="px-6 py-4 bg-slate-50/70 border-t border-slate-100 flex items-center justify-between text-xs">
+                        <span class="font-semibold text-slate-500"><i
+                                class="fa-solid fa-book-reader text-teal-500 mr-1"></i> Resensi Karya</span>
+                        <button
+                            onclick="openModal('Resensi Buku: Jejak Kemanusiaan & Pembelajaran Hidup', 'Struktur resensi lengkap mencakup data publikasi buku, orientasi, sinopsis, analisis keunggulan, serta kesimpulan saran pembaca.', '#', 'Telah Dinilai: 95/100')"
+                            class="font-bold text-brand-600 hover:text-brand-800 transition-colors">
+                            Baca Karya <i class="fa-solid fa-chevron-right text-[10px] ml-1"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- ASSIGNMENT DETAIL MODAL -->
+    <div id="detail-modal"
+        class="fixed inset-0 z-50 hidden flex items-center justify-center p-4 bg-slate-900/50 backdrop-blur-sm animate-fade-in">
+        <div
+            class="bg-white rounded-3xl max-w-lg w-full p-6 sm:p-8 space-y-6 shadow-2xl border border-brand-100 relative">
+
+            <button onclick="closeModal()"
+                class="absolute top-5 right-5 w-9 h-9 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-500 flex items-center justify-center transition-colors">
+                <i class="fa-solid fa-xmark text-lg"></i>
+            </button>
+
+            <div class="space-y-2">
+                <span id="modal-status"
+                    class="inline-block px-3 py-1 rounded-full text-[11px] font-bold bg-brand-100 text-brand-700">
+                    Status Tugas
+                </span>
+                <h3 id="modal-title" class="text-xl font-extrabold text-slate-900">
+                    Judul Tugas
+                </h3>
+            </div>
+
+            <div class="bg-brand-50/50 p-4 rounded-2xl border border-brand-100 text-slate-700 text-xs sm:text-sm leading-relaxed"
+                id="modal-body">
+                Deskripsi lengkap tugas akan tampil di sini...
+            </div>
+
+            <div class="flex items-center justify-end gap-3 pt-2">
+                <button onclick="closeModal()"
+                    class="px-5 py-2.5 rounded-xl border border-slate-200 text-slate-600 hover:bg-slate-50 text-xs font-semibold">
+                    Tutup
+                </button>
+                <a id="modal-link" href="#" target="_blank"
+                    class="px-5 py-2.5 rounded-xl bg-brand-500 hover:bg-brand-600 text-white text-xs font-semibold shadow-md transition-colors flex items-center gap-2">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i> Buka Tautan Tugas
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="bg-white border-t border-brand-100 mt-16 py-10">
+        <div
+            class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
+
+            <div class="flex items-center gap-3">
+                <div
+                    class="w-10 h-10 rounded-xl bg-brand-500 text-white flex items-center justify-center font-bold text-lg">
+                    AJ
+                </div>
+                <div>
+                    <p class="font-bold text-slate-900 text-sm">Angelica Jasmine Kartawinata</p>
+                    <p class="text-xs text-slate-500">Sekolah Cinta Kasih Tzu Chi &bull; Kumpulan Tugas Sekolah</p>
+                </div>
+            </div>
+
+            <div class="text-xs text-slate-500 text-center md:text-right space-y-1">
+                <p>&copy; 2026 Angelica Jasmine Kartawinata. All rights reserved.</p>
+                <p class="text-slate-400">Dirancang dengan warna biru muda & putih yang ramah pengguna.</p>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- ========================================== -->
+    <!-- FLOATING GLOBAL MUSIC PLAYER WIDGET       -->
+    <!-- ========================================== -->
+    <audio id="global-audio" src="animal.mp3" preload="metadata"></audio>
+
+    <div id="music-player-container" class="fixed bottom-5 right-5 z-50 flex flex-col items-end">
+        <!-- COLLAPSED PILL BADGE -->
+        <button id="music-player-pill" onclick="toggleMusicWidget()"
+            class="hidden glass-player hover:bg-slate-800 text-white px-4 py-2.5 rounded-full shadow-2xl flex items-center gap-3 border border-brand-400/30 transition-all duration-300 transform hover:scale-105">
+            <div
+                class="w-6 h-6 rounded-full bg-brand-500 text-white flex items-center justify-center text-xs shadow-md">
+                <i class="fa-solid fa-music"></i>
+            </div>
+            <div class="text-left leading-tight pr-1">
+                <p class="text-xs font-bold text-slate-100">Animal</p>
+                <p class="text-[10px] text-brand-300 font-medium" id="music-pill-status">Jeda ⏸️</p>
+            </div>
+            <i class="fa-solid fa-chevron-up text-xs text-slate-400"></i>
+        </button>
+
+        <!-- EXPANDED FULL PLAYER CARD -->
+        <div id="music-player-card"
+            class="glass-player text-white rounded-3xl p-4 sm:p-5 shadow-2xl max-w-xs sm:max-w-sm w-full space-y-4 relative border border-white/20 transition-all duration-300">
+
+            <!-- HEADER / MINIMIZE BUTTON -->
+            <div class="flex items-center justify-between border-b border-white/10 pb-3">
+                <div class="flex items-center gap-2">
+                    <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse"></span>
+                    <span class="text-[11px] font-bold uppercase tracking-wider text-brand-300">Music Player</span>
+                </div>
+                <div class="flex items-center gap-1">
+                    <button onclick="toggleMusicWidget()" title="Kecilkan Pemutar Musik"
+                        class="w-7 h-7 rounded-lg bg-white/10 hover:bg-white/20 text-slate-300 flex items-center justify-center transition-colors">
+                        <i class="fa-solid fa-minus text-xs"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- SONG INFO & VINYL ARTWORK -->
+            <div class="flex items-center gap-4">
+                <div class="relative w-14 h-14 sm:w-16 sm:h-16 flex-shrink-0">
+                    <div id="music-vinyl-disc"
+                        class="w-full h-full rounded-full bg-gradient-to-tr from-slate-900 via-slate-800 to-slate-900 border-2 border-slate-700 shadow-lg flex items-center justify-center relative overflow-hidden animate-vinyl-paused">
+                        <div class="absolute inset-1 rounded-full border border-white/10"></div>
+                        <div class="absolute inset-2.5 rounded-full border border-white/10"></div>
+                        <div
+                            class="w-6 h-6 rounded-full bg-brand-500 border-2 border-slate-900 flex items-center justify-center">
+                            <i class="fa-solid fa-compact-disc text-white text-[10px]"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="space-y-1 overflow-hidden min-w-0 flex-1">
+                    <h4 class="font-bold text-white text-sm sm:text-base truncate leading-snug"
+                        title="Animal">
+                        Animal
+                    </h4>
+                    <p class="text-xs text-brand-200 truncate">
+                        Neon Trees
+                    </p>
+                    <p id="music-status-notice" class="text-[10px] text-amber-300 font-semibold hidden animate-pulse">
+                        Ketuk 🎵 untuk melanjutkan pemutaran
+                    </p>
+                </div>
+            </div>
+
+            <!-- PROGRESS SCRUBBER BAR -->
+            <div class="space-y-1.5 pt-1">
+                <input type="range" id="music-progress" min="0" max="100" value="0" step="0.1"
+                    oninput="seekAudio(this.value)" class="w-full music-slider">
+                <div class="flex justify-between text-[11px] font-mono text-slate-300 font-medium">
+                    <span id="music-time-display">00:00 / 00:00</span>
+                    <span class="text-brand-300 font-sans text-[10px]">Full Music</span>
+                </div>
+            </div>
+
+            <!-- PLAYER CONTROLS -->
+            <div class="flex items-center justify-between pt-1">
+                <div class="flex items-center gap-1.5">
+                    <button onclick="seekOffset(-10)" title="Mundur 10 Detik"
+                        class="w-8 h-8 rounded-full bg-white/10 hover:bg-white/20 text-slate-200 flex items-center justify-center transition-colors">
+                        <i class="fa-solid fa-rotate-left text-xs"></i>
+                    </button>
+                    <button onclick="togglePlayPause()" title="Putar / Jeda"
+                        class="w-10 h-10 rounded-full bg-brand-500 hover:bg-brand-400 text-white flex items-center justify-center shadow-lg shadow-brand-500/40 transition-transform active:scale-95">
+                        <i id="music-play-icon" class="fa-solid fa-play text-sm ml-0.5"></i>
+                    </button>
+                    <button onclick="seekOffset(10)" title="Maju 10 Detik"
+                        class="w-8 h-8 rounded-full bg-white/10 hover:bg-white/20 text-slate-200 flex items-center justify-center transition-colors">
+                        <i class="fa-solid fa-rotate-right text-xs"></i>
+                    </button>
+                </div>
+
+                <div class="flex items-center gap-2 bg-white/5 px-3 py-1.5 rounded-full border border-white/10">
+                    <button onclick="toggleMute()" title="Mute / Unmute" class="hover:text-brand-300 transition-colors">
+                        <i id="music-vol-icon" class="fa-solid fa-volume-high text-brand-400 text-xs"></i>
+                    </button>
+                    <input type="range" id="music-volume" min="0" max="1" value="0.8" step="0.05"
+                        oninput="changeVolume(this.value)" class="w-16 music-slider">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- INTERACTIVE VANILLA JS SCRIPT -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>

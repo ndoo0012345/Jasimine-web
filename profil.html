@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil | Angelica Jasmine Kartawinata | Sekolah Cinta Kasih Tzu Chi</title>
+    <meta name="description"
+        content="Profil pribadi, minat, keahlian, dan kontak Angelica Jasmine Kartawinata dari Sekolah Cinta Kasih Tzu Chi.">
+    <meta name="author" content="Angelica Jasmine Kartawinata">
+
+    <!-- Google Fonts: Inter & Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#f0f9ff',
+                            100: '#e0f2fe',
+                            200: '#bae6fd',
+                            300: '#7dd3fc',
+                            400: '#38bdf8',
+                            500: '#0ea5e9',
+                            600: '#0284c7',
+                            700: '#0369a1',
+                            800: '#075985',
+                            900: '#0c4a6e',
+                        },
+                        tzuchi: {
+                            blue: '#1e3a8a',
+                            sky: '#e2f1fd',
+                            softBg: '#f4f9fd',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'Inter', 'sans-serif'],
+                    },
+                    boxShadow: {
+                        'soft': '0 10px 30px -5px rgba(14, 165, 233, 0.08)',
+                        'card': '0 4px 20px 0 rgba(0, 0, 0, 0.04)',
+                        'card-hover': '0 12px 30px -5px rgba(14, 165, 233, 0.18)',
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body
+    class="bg-[#f8fafc] text-slate-800 font-sans antialiased min-h-screen flex flex-col justify-between selection:bg-brand-200 selection:text-brand-900">
+
+    <!-- TOP ANNOUNCEMENT / HEADER BADGE -->
+    <div
+        class="bg-gradient-to-r from-brand-600 via-brand-500 to-sky-400 text-white text-xs sm:text-sm py-2 px-4 text-center font-medium shadow-sm flex items-center justify-center gap-2">
+        <span class="bg-white/20 px-2 py-0.5 rounded-full text-[11px] font-semibold tracking-wide uppercase">Official
+            Site</span>
+        <span>Portofolio & Kumpulan Tugas Sekolah &bull; <strong>Sekolah Cinta Kasih Tzu Chi</strong></span>
+    </div>
+
+    <!-- MAIN NAVIGATION BAR -->
+    <header class="sticky top-0 z-40 glass-nav border-b border-brand-100 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+
+                <!-- BRAND / LOGO -->
+                <a href="index.html" class="flex items-center gap-3 group focus:outline-none">
+                    <img src="muak.jpeg" alt="Angelica Jasmine Kartawinata"
+                        class="w-11 h-11 rounded-2xl object-cover shadow-md shadow-brand-200 group-hover:scale-105 transition-transform duration-300 border border-brand-200">
+                    <div>
+                        <h1
+                            class="font-bold text-lg text-slate-900 leading-tight group-hover:text-brand-600 transition-colors">
+                            Angelica Jasmine K.
+                        </h1>
+                        <p class="text-xs text-brand-600 font-medium flex items-center gap-1">
+                            <i class="fa-solid font-normal fa-graduation-cap text-[10px]"></i> Sekolah Cinta Kasih Tzu
+                            Chi
+                        </p>
+                    </div>
+                </a>
+
+                <!-- DESKTOP MENU -->
+                <nav
+                    class="hidden md:flex items-center gap-1 bg-brand-50/70 p-1.5 rounded-2xl border border-brand-100/80">
+                    <a href="index.html" id="nav-dashboard"
+                        class="nav-btn px-5 py-2.5 rounded-xl text-sm font-semibold transition-all duration-200 text-slate-600 hover:text-brand-600 hover:bg-white/60">
+                        <i class="fa-solid fa-house-chimney text-xs mr-2"></i>Dashboard
+                    </a>
+                    <a href="profil.html" id="nav-profil"
+                        class="nav-btn px-5 py-2.5 rounded-xl text-sm font-semibold transition-all duration-200 text-brand-700 bg-white shadow-sm">
+                        <i class="fa-solid fa-user-graduate text-xs mr-2"></i>Profil
+                    </a>
+                    <a href="informatika.html" id="nav-informatika"
+                        class="nav-btn px-5 py-2.5 rounded-xl text-sm font-semibold transition-all duration-200 text-slate-600 hover:text-brand-600 hover:bg-white/60">
+                        <i class="fa-solid fa-laptop-code text-xs mr-2"></i>Informatika
+                    </a>
+                    <a href="bahasa-indonesia.html" id="nav-bahasaindonesia"
+                        class="nav-btn px-5 py-2.5 rounded-xl text-sm font-semibold transition-all duration-200 text-slate-600 hover:text-brand-600 hover:bg-white/60">
+                        <i class="fa-solid fa-book-bookmark text-xs mr-2"></i>Bahasa Indonesia
+                    </a>
+                    <a href="arcade.html" id="nav-arcade"
+                        class="nav-btn px-5 py-2.5 rounded-xl text-sm font-semibold transition-all duration-200 text-slate-600 hover:text-brand-600 hover:bg-white/60">
+                        <i class="fa-solid fa-gamepad text-xs mr-2"></i>Arcade
+                    </a>
+                    <a href="index.html#schedule" id="nav-schedule"
+                        class="nav-btn px-5 py-2.5 rounded-xl text-sm font-semibold transition-all duration-200 text-slate-600 hover:text-brand-600 hover:bg-white/60">
+                        <i class="fa-solid fa-calendar-days text-xs mr-2"></i>Schedule
+                    </a>
+                </nav>
+
+                <!-- SOCIAL QUICK LINKS & MOBILE BUTTON -->
+                <div class="flex items-center gap-2 sm:gap-3">
+                    <div class="hidden lg:flex items-center gap-2 border-r border-slate-200 pr-3 mr-1">
+                        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" title="Instagram"
+                            class="w-9 h-9 rounded-xl bg-slate-100 hover:bg-brand-100 hover:text-brand-600 text-slate-600 flex items-center justify-center transition-all duration-200">
+                            <i class="fa-brands fa-instagram text-base"></i>
+                        </a>
+                        <a href="https://github.com" target="_blank" rel="noopener noreferrer" title="GitHub"
+                            class="w-9 h-9 rounded-xl bg-slate-100 hover:bg-brand-100 hover:text-brand-600 text-slate-600 flex items-center justify-center transition-all duration-200">
+                            <i class="fa-brands fa-github text-base"></i>
+                        </a>
+                        <a href="mailto:angelica@example.com" title="Email Saya"
+                            class="w-9 h-9 rounded-xl bg-slate-100 hover:bg-brand-100 hover:text-brand-600 text-slate-600 flex items-center justify-center transition-all duration-200">
+                            <i class="fa-regular fa-envelope text-base"></i>
+                        </a>
+                    </div>
+
+                    <a href="#contact-section"
+                        onclick="document.getElementById('contact-section').scrollIntoView({behavior: 'smooth'})"
+                        class="hidden sm:inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-brand-500 hover:bg-brand-600 text-white text-xs sm:text-sm font-semibold shadow-md shadow-brand-200 transition-all duration-200">
+                        <i class="fa-regular fa-paper-plane"></i> Kontak
+                    </a>
+
+                    <!-- Mobile Menu Trigger -->
+                    <button id="mobile-menu-btn" onclick="toggleMobileMenu()"
+                        class="md:hidden w-10 h-10 rounded-xl bg-slate-100 hover:bg-brand-100 text-slate-700 flex items-center justify-center transition-colors">
+                        <i class="fa-solid fa-bars text-lg" id="mobile-menu-icon"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- MOBILE MENU DROPDOWN -->
+        <div id="mobile-menu"
+            class="hidden md:hidden border-t border-brand-100 bg-white px-4 pt-3 pb-6 space-y-2 shadow-xl animate-fade-in">
+            <a href="index.html" onclick="toggleMobileMenu();" id="mob-nav-dashboard"
+                class="w-full text-left px-4 py-3 rounded-xl font-semibold text-slate-700 hover:bg-slate-50 flex items-center gap-3">
+                <i class="fa-solid fa-house-chimney text-base w-6 text-center"></i> Dashboard
+            </a>
+            <a href="profil.html" onclick="toggleMobileMenu();" id="mob-nav-profil"
+                class="w-full text-left px-4 py-3 rounded-xl font-semibold text-brand-600 bg-brand-50 flex items-center gap-3">
+                <i class="fa-solid fa-user-graduate text-base w-6 text-center"></i> Profil Saya
+            </a>
+            <a href="informatika.html" onclick="toggleMobileMenu();" id="mob-nav-informatika"
+                class="w-full text-left px-4 py-3 rounded-xl font-semibold text-slate-700 hover:bg-slate-50 flex items-center gap-3">
+                <i class="fa-solid fa-laptop-code text-base w-6 text-center"></i> Informatika
+            </a>
+            <a href="bahasa-indonesia.html" onclick="toggleMobileMenu();" id="mob-nav-bahasaindonesia"
+                class="w-full text-left px-4 py-3 rounded-xl font-semibold text-slate-700 hover:bg-slate-50 flex items-center gap-3">
+                <i class="fa-solid fa-book-bookmark text-base w-6 text-center"></i> Bahasa Indonesia
+            </a>
+            <a href="arcade.html" onclick="toggleMobileMenu();" id="mob-nav-arcade"
+                class="w-full text-left px-4 py-3 rounded-xl font-semibold text-slate-700 hover:bg-slate-50 flex items-center gap-3">
+                <i class="fa-solid fa-gamepad text-base w-6 text-center"></i> Arcade
+            </a>
+            <a href="index.html#schedule" onclick="toggleMobileMenu();" id="mob-nav-schedule"
+                class="w-full text-left px-4 py-3 rounded-xl font-semibold text-slate-700 hover:bg-slate-50 flex items-center gap-3">
+                <i class="fa-solid fa-calendar-days text-base w-6 text-center"></i> Schedule
+            </a>
+
+            <div class="pt-4 border-t border-slate-100 flex items-center justify-around text-slate-600">
+                <a href="https://instagram.com" target="_blank"
+                    class="p-2 hover:text-brand-600 flex items-center gap-1.5 text-xs font-medium">
+                    <i class="fa-brands fa-instagram text-lg"></i> Instagram
+                </a>
+                <a href="https://linkedin.com" target="_blank"
+                    class="p-2 hover:text-brand-600 flex items-center gap-1.5 text-xs font-medium">
+                    <i class="fa-brands fa-linkedin text-lg"></i> LinkedIn
+                </a>
+                <a href="https://github.com" target="_blank"
+                    class="p-2 hover:text-brand-600 flex items-center gap-1.5 text-xs font-medium">
+                    <i class="fa-brands fa-github text-lg"></i> GitHub
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT CONTAINER -->
+    <main class="flex-grow max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-10">
+
+        <!-- ========================================== -->
+        <!-- TAB 2: PROFIL -->
+        <!-- ========================================== -->
+        <section id="tab-profil" class="space-y-10">
+
+            <!-- PROFILE HEADER CARD -->
+            <div class="bg-white rounded-3xl p-8 sm:p-10 border border-brand-100 shadow-soft">
+                <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+
+                    <!-- AVATAR / PHOTO PLACEHOLDER -->
+                    <div class="md:col-span-4 flex flex-col items-center text-center">
+                        <div
+                            class="relative w-44 h-44 rounded-3xl bg-gradient-to-br from-brand-400 via-brand-300 to-sky-100 p-1.5 shadow-lg">
+                            <img src="muak.jpeg" alt="Angelica Jasmine Kartawinata"
+                                class="w-full h-full rounded-[22px] object-cover shadow-inner">
+                            <div
+                                class="absolute -bottom-3 bg-brand-600 text-white text-[11px] font-bold px-3 py-1 rounded-full shadow-md">
+                                SEKOLAH CINTA KASIH
+                            </div>
+                        </div>
+                        <h3 class="mt-5 text-xl font-bold text-slate-900">Angelica Jasmine K.</h3>
+                        <p class="text-xs text-brand-600 font-semibold">Pelajar</p>
+                    </div>
+
+                    <!-- ABOUT BIO -->
+                    <div class="md:col-span-8 space-y-4">
+                        <div
+                            class="inline-flex items-center gap-2 px-3 py-1 rounded-lg bg-brand-50 text-brand-700 text-xs font-bold">
+                            <i class="fa-solid fa-id-card"></i> Tentang Saya
+                        </div>
+                        <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900">
+                            Halo! Saya Angelica Jasmine Kartawinata
+                        </h2>
+                        <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+                            Saya adalah seorang siswi di <strong class="text-slate-900 font-semibold">SEKOLAH CINTA
+                                KASIH TZU CHI</strong> yang memiliki ketertarikan tinggi pada dunia teknologi, ilmu
+                            komputer, dan sastra Bahasa Indonesia. Website ini dibuat sebagai wadah digital untuk
+                            mengorganisir serta mempublikasikan seluruh karya dan tugas sekolah saya secara sistematis.
+                        </p>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2 text-xs">
+                            <div class="flex items-center gap-3 p-3 rounded-xl bg-slate-50 border border-slate-100">
+                                <div
+                                    class="w-9 h-9 rounded-lg bg-brand-100 text-brand-600 flex items-center justify-center font-bold">
+                                    <i class="fa-solid fa-school"></i>
+                                </div>
+                                <div>
+                                    <span class="text-slate-400 text-[10px] uppercase font-bold block">sekolah</span>
+                                    <span class="font-semibold text-slate-800">Sekolah Cinta Kasih Tzu Chi</span>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-3 p-3 rounded-xl bg-slate-50 border border-slate-100">
+                                <div
+                                    class="w-9 h-9 rounded-lg bg-brand-100 text-brand-600 flex items-center justify-center font-bold">
+                                    <i class="fa-solid fa-heart"></i>
+                                </div>
+                                <div>
+                                    <span class="text-slate-400 text-[10px] uppercase font-bold block">Minat &
+                                        Hobi</span>
+                                    <span class="font-semibold text-slate-800">menggambar, mendengar musik</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SKILLS & EDUCATION GRID -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+
+                <!-- SKILLS CARD -->
+                <div class="bg-white rounded-3xl p-6 sm:p-8 border border-slate-100 shadow-card space-y-6">
+                    <div class="flex items-center gap-3 border-b border-slate-100 pb-4">
+                        <div
+                            class="w-10 h-10 rounded-xl bg-brand-100 text-brand-600 flex items-center justify-center text-lg font-bold">
+                            <i class="fa-solid fa-wand-magic-sparkles"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-slate-900 text-lg">Keahlian & Minat Belajar</h3>
+                            <p class="text-xs text-slate-500">Keterampilan teknis dan non-teknis</p>
+                        </div>
+                    </div>
+
+                    <div class="space-y-4">
+                        <!-- Skill 1 -->
+                        <div>
+                            <div class="flex justify-between text-xs font-semibold mb-1">
+                                <span class="text-slate-700">HTML & Web Dasar</span>
+                                <span class="text-brand-600">85%</span>
+                            </div>
+                            <div class="w-full h-2 rounded-full bg-slate-100 overflow-hidden">
+                                <div class="h-full bg-brand-500 rounded-full" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <!-- Skill 2 -->
+                        <div>
+                            <div class="flex justify-between text-xs font-semibold mb-1">
+                                <span class="text-slate-700">Styling dengan Tailwind CSS</span>
+                                <span class="text-brand-600">80%</span>
+                            </div>
+                            <div class="w-full h-2 rounded-full bg-slate-100 overflow-hidden">
+                                <div class="h-full bg-brand-400 rounded-full" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <!-- Skill 3 -->
+                        <div>
+                            <div class="flex justify-between text-xs font-semibold mb-1">
+                                <span class="text-slate-700">Penulisan Karya Teks Bahasa Indonesia</span>
+                                <span class="text-brand-600">90%</span>
+                            </div>
+                            <div class="w-full h-2 rounded-full bg-slate-100 overflow-hidden">
+                                <div class="h-full bg-brand-500 rounded-full" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <!-- Skill 4 -->
+                        <div>
+                            <div class="flex justify-between text-xs font-semibold mb-1">
+                                <span class="text-slate-700">Pengolahan Data & Presentasi</span>
+                                <span class="text-brand-600">85%</span>
+                            </div>
+                            <div class="w-full h-2 rounded-full bg-slate-100 overflow-hidden">
+                                <div class="h-full bg-sky-400 rounded-full" style="width: 85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- EDUCATION & VALUES -->
+                <div class="bg-white rounded-3xl p-6 sm:p-8 border border-slate-100 shadow-card space-y-6">
+                    <div class="flex items-center gap-3 border-b border-slate-100 pb-4">
+                        <div
+                            class="w-10 h-10 rounded-xl bg-brand-100 text-brand-600 flex items-center justify-center text-lg font-bold">
+                            <i class="fa-solid fa-hands-holding-child"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-slate-900 text-lg">Nilai & Nilai Kemanusiaan</h3>
+                            <p class="text-xs text-slate-500">Budaya Humanis Sekolah Cinta Kasih Tzu Chi</p>
+                        </div>
+                    </div>
+
+                    <div class="space-y-4 text-xs text-slate-600">
+                        <div class="p-4 rounded-2xl bg-brand-50/50 border border-brand-100/60 space-y-1">
+                            <h4 class="font-bold text-brand-800 text-sm flex items-center gap-2">
+                                <i class="fa-solid fa-leaf text-emerald-500"></i> Budaya Perilaku Bersumbangsih
+                            </h4>
+                            <p class="leading-relaxed">
+                                Menjunjung tinggi kedisiplinan, welas asih, rasa syukur, serta saling menghormati sesama
+                                teman dan guru.
+                            </p>
+                        </div>
+                        <div class="p-4 rounded-2xl bg-brand-50/50 border border-brand-100/60 space-y-1">
+                            <h4 class="font-bold text-brand-800 text-sm flex items-center gap-2">
+                                <i class="fa-solid fa-lightbulb text-amber-500"></i> Pembelajaran Berkelanjutan
+                            </h4>
+                            <p class="leading-relaxed">
+                                Selalu bersemangat mempelajari hal-hal baru khususnya dalam bidang ilmu komunikasi dan
+                                pemrograman komputer.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SOCIAL MEDIA & CONTACT SECTION -->
+            <div id="contact-section"
+                class="bg-gradient-to-br from-brand-900 to-slate-900 text-white rounded-3xl p-8 sm:p-10 shadow-xl space-y-8">
+                <div class="text-center max-w-xl mx-auto space-y-2">
+                    <span
+                        class="px-3 py-1 rounded-full bg-brand-500/20 text-brand-300 text-xs font-bold uppercase tracking-wider border border-brand-500/30">
+                        Mari Terhubung
+                    </span>
+                    <h3 class="text-2xl sm:text-3xl font-extrabold">Media Sosial & Kontak</h3>
+                    <p class="text-slate-300 text-xs sm:text-sm">
+                        Anda dapat me-reach out atau melihat aktivitas sekolah dan karya saya melalui tautan berikut:
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                    <!-- Instagram -->
+                    <a href="https://instagram.com/ngllaawl" target="_blank" rel="noopener noreferrer"
+                        class="bg-white/10 hover:bg-white/20 border border-white/15 p-5 rounded-2xl flex items-center gap-4 transition-all duration-200 group">
+                        <div
+                            class="w-12 h-12 rounded-xl bg-pink-500/20 text-pink-400 group-hover:scale-110 transition-transform flex items-center justify-center text-2xl">
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+                        <div>
+                            <span class="block text-xs text-slate-400 font-medium">Instagram</span>
+                            <span class="font-bold text-sm text-white group-hover:text-brand-300">@ngllaawl</span>
+                        </div>
+                    </a>
+
+                    <!-- YOUTUBE -->
+                    <a href="https://youtube.com" target="_blank" rel="noopener noreferrer"
+                        class="bg-white/10 hover:bg-white/20 border border-white/15 p-5 rounded-2xl flex items-center gap-4 transition-all duration-200 group">
+                        <div
+                            class="w-12 h-12 rounded-xl bg-blue-500/20 text-blue-400 group-hover:scale-110 transition-transform flex items-center justify-center text-2xl">
+                            <i class="fa-brands fa-youtube-in"></i>
+                        </div>
+                        <div>
+                            <span class="block text-xs text-slate-400 font-medium">youtube</span>
+                            <span class="font-bold text-sm text-white group-hover:text-brand-300">chitoraawr17
+                            </span>
+                        </div>
+                    </a>
+
+                    <!-- Whatsapp -->
+                    <a href="https://whatsapp.com" target="_blank" rel="noopener noreferrer"
+                        class="bg-white/10 hover:bg-white/20 border border-white/15 p-5 rounded-2xl flex items-center gap-4 transition-all duration-200 group">
+                        <div
+                            class="w-12 h-12 rounded-xl bg-slate-500/20 text-slate-300 group-hover:scale-110 transition-transform flex items-center justify-center text-2xl">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </div>
+                        <div>
+                            <span class="block text-xs text-slate-400 font-medium">whatsapp</span>
+                            <span class="font-bold text-sm text-white group-hover:text-brand-300">087836050023</span>
+                        </div>
+                    </a>
+
+                    <!-- Email -->
+                    <a href="mailto:chitoraawr17@gmail.com"
+                        class="bg-white/10 hover:bg-white/20 border border-white/15 p-5 rounded-2xl flex items-center gap-4 transition-all duration-200 group">
+                        <div
+                            class="w-12 h-12 rounded-xl bg-emerald-500/20 text-emerald-400 group-hover:scale-110 transition-transform flex items-center justify-center text-2xl">
+                            <i class="fa-regular fa-envelope"></i>
+                        </div>
+                        <div>
+                            <span class="block text-xs text-slate-400 font-medium">Email Sekolah</span>
+                            <span
+                                class="font-bold text-xs text-white group-hover:text-brand-300 truncate max-w-[120px] block">chitoraawr@gmail.com</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- ASSIGNMENT DETAIL MODAL -->
+    <div id="detail-modal"
+        class="fixed inset-0 z-50 hidden flex items-center justify-center p-4 bg-slate-900/50 backdrop-blur-sm animate-fade-in">
+        <div
+            class="bg-white rounded-3xl max-w-lg w-full p-6 sm:p-8 space-y-6 shadow-2xl border border-brand-100 relative">
+
+            <button onclick="closeModal()"
+                class="absolute top-5 right-5 w-9 h-9 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-500 flex items-center justify-center transition-colors">
+                <i class="fa-solid fa-xmark text-lg"></i>
+            </button>
+
+            <div class="space-y-2">
+                <span id="modal-status"
+                    class="inline-block px-3 py-1 rounded-full text-[11px] font-bold bg-brand-100 text-brand-700">
+                    Status Tugas
+                </span>
+                <h3 id="modal-title" class="text-xl font-extrabold text-slate-900">
+                    Judul Tugas
+                </h3>
+            </div>
+
+            <div class="bg-brand-50/50 p-4 rounded-2xl border border-brand-100 text-slate-700 text-xs sm:text-sm leading-relaxed"
+                id="modal-body">
+                Deskripsi lengkap tugas akan tampil di sini...
+            </div>
+
+            <div class="flex items-center justify-end gap-3 pt-2">
+                <button onclick="closeModal()"
+                    class="px-5 py-2.5 rounded-xl border border-slate-200 text-slate-600 hover:bg-slate-50 text-xs font-semibold">
+                    Tutup
+                </button>
+                <a id="modal-link" href="#" target="_blank"
+                    class="px-5 py-2.5 rounded-xl bg-brand-500 hover:bg-brand-600 text-white text-xs font-semibold shadow-md transition-colors flex items-center gap-2">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i> Buka Tautan Tugas
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="bg-white border-t border-brand-100 mt-16 py-10">
+        <div
+            class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
+
+            <div class="flex items-center gap-3">
+                <div
+                    class="w-10 h-10 rounded-xl bg-brand-500 text-white flex items-center justify-center font-bold text-lg">
+                    AJ
+                </div>
+                <div>
+                    <p class="font-bold text-slate-900 text-sm">Angelica Jasmine Kartawinata</p>
+                    <p class="text-xs text-slate-500">Sekolah Cinta Kasih Tzu Chi &bull; Kumpulan Tugas Sekolah</p>
+                </div>
+            </div>
+
+            <div class="text-xs text-slate-500 text-center md:text-right space-y-1">
+                <p>&copy; 2026 Angelica Jasmine Kartawinata. All rights reserved.</p>
+                <p class="text-slate-400">Dirancang dengan warna biru muda & putih yang ramah pengguna.</p>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- ========================================== -->
+    <!-- FLOATING GLOBAL MUSIC PLAYER WIDGET       -->
+    <!-- ========================================== -->
+    <audio id="global-audio" src="animal.mp3" preload="metadata"></audio>
+
+    <div id="music-player-container" class="fixed bottom-5 right-5 z-50 flex flex-col items-end">
+        <!-- COLLAPSED PILL BADGE -->
+        <button id="music-player-pill" onclick="toggleMusicWidget()"
+            class="hidden glass-player hover:bg-slate-800 text-white px-4 py-2.5 rounded-full shadow-2xl flex items-center gap-3 border border-brand-400/30 transition-all duration-300 transform hover:scale-105">
+            <div
+                class="w-6 h-6 rounded-full bg-brand-500 text-white flex items-center justify-center text-xs shadow-md">
+                <i class="fa-solid fa-music"></i>
+            </div>
+            <div class="text-left leading-tight pr-1">
+                <p class="text-xs font-bold text-slate-100">Animal</p>
+                <p class="text-[10px] text-brand-300 font-medium" id="music-pill-status">Jeda ⏸️</p>
+            </div>
+            <i class="fa-solid fa-chevron-up text-xs text-slate-400"></i>
+        </button>
+
+        <!-- EXPANDED FULL PLAYER CARD -->
+        <div id="music-player-card"
+            class="glass-player text-white rounded-3xl p-4 sm:p-5 shadow-2xl max-w-xs sm:max-w-sm w-full space-y-4 relative border border-white/20 transition-all duration-300">
+
+            <!-- HEADER / MINIMIZE BUTTON -->
+            <div class="flex items-center justify-between border-b border-white/10 pb-3">
+                <div class="flex items-center gap-2">
+                    <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse"></span>
+                    <span class="text-[11px] font-bold uppercase tracking-wider text-brand-300">Music Player</span>
+                </div>
+                <div class="flex items-center gap-1">
+                    <button onclick="toggleMusicWidget()" title="Kecilkan Pemutar Musik"
+                        class="w-7 h-7 rounded-lg bg-white/10 hover:bg-white/20 text-slate-300 flex items-center justify-center transition-colors">
+                        <i class="fa-solid fa-minus text-xs"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- SONG INFO & VINYL ARTWORK -->
+            <div class="flex items-center gap-4">
+                <div class="relative w-14 h-14 sm:w-16 sm:h-16 flex-shrink-0">
+                    <div id="music-vinyl-disc"
+                        class="w-full h-full rounded-full bg-gradient-to-tr from-slate-900 via-slate-800 to-slate-900 border-2 border-slate-700 shadow-lg flex items-center justify-center relative overflow-hidden animate-vinyl-paused">
+                        <div class="absolute inset-1 rounded-full border border-white/10"></div>
+                        <div class="absolute inset-2.5 rounded-full border border-white/10"></div>
+                        <div
+                            class="w-6 h-6 rounded-full bg-brand-500 border-2 border-slate-900 flex items-center justify-center">
+                            <i class="fa-solid fa-compact-disc text-white text-[10px]"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="space-y-1 overflow-hidden min-w-0 flex-1">
+                    <h4 class="font-bold text-white text-sm sm:text-base truncate leading-snug"
+                        title="Animal">
+                        Animal
+                    </h4>
+                    <p class="text-xs text-brand-200 truncate">
+                        Neon Trees
+                    </p>
+                    <p id="music-status-notice" class="text-[10px] text-amber-300 font-semibold hidden animate-pulse">
+                        Ketuk 🎵 untuk melanjutkan pemutaran
+                    </p>
+                </div>
+            </div>
+
+            <!-- PROGRESS SCRUBBER BAR -->
+            <div class="space-y-1.5 pt-1">
+                <input type="range" id="music-progress" min="0" max="100" value="0" step="0.1"
+                    oninput="seekAudio(this.value)" class="w-full music-slider">
+                <div class="flex justify-between text-[11px] font-mono text-slate-300 font-medium">
+                    <span id="music-time-display">00:00 / 00:00</span>
+                    <span class="text-brand-300 font-sans text-[10px]">Full Music</span>
+                </div>
+            </div>
+
+            <!-- PLAYER CONTROLS -->
+            <div class="flex items-center justify-between pt-1">
+                <div class="flex items-center gap-1.5">
+                    <button onclick="seekOffset(-10)" title="Mundur 10 Detik"
+                        class="w-8 h-8 rounded-full bg-white/10 hover:bg-white/20 text-slate-200 flex items-center justify-center transition-colors">
+                        <i class="fa-solid fa-rotate-left text-xs"></i>
+                    </button>
+                    <button onclick="togglePlayPause()" title="Putar / Jeda"
+                        class="w-10 h-10 rounded-full bg-brand-500 hover:bg-brand-400 text-white flex items-center justify-center shadow-lg shadow-brand-500/40 transition-transform active:scale-95">
+                        <i id="music-play-icon" class="fa-solid fa-play text-sm ml-0.5"></i>
+                    </button>
+                    <button onclick="seekOffset(10)" title="Maju 10 Detik"
+                        class="w-8 h-8 rounded-full bg-white/10 hover:bg-white/20 text-slate-200 flex items-center justify-center transition-colors">
+                        <i class="fa-solid fa-rotate-right text-xs"></i>
+                    </button>
+                </div>
+
+                <div class="flex items-center gap-2 bg-white/5 px-3 py-1.5 rounded-full border border-white/10">
+                    <button onclick="toggleMute()" title="Mute / Unmute" class="hover:text-brand-300 transition-colors">
+                        <i id="music-vol-icon" class="fa-solid fa-volume-high text-brand-400 text-xs"></i>
+                    </button>
+                    <input type="range" id="music-volume" min="0" max="1" value="0.8" step="0.05"
+                        oninput="changeVolume(this.value)" class="w-16 music-slider">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- INTERACTIVE VANILLA JS SCRIPT -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>

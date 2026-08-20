@@ -1,0 +1,88 @@
+<main class="flex-grow max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-10">
+    <section id="arcade-hub" class="space-y-10">
+        <!-- ARCADE HERO -->
+        <div class="relative overflow-hidden rounded-3xl bg-gradient-to-br from-indigo-600 via-brand-500 to-sky-400 text-white p-8 sm:p-12 shadow-soft">
+            <div class="absolute -right-12 -top-12 w-64 h-64 rounded-full bg-white/10 blur-2xl pointer-events-none"></div>
+            <div class="absolute right-1/3 -bottom-16 w-80 h-80 rounded-full bg-brand-300/20 blur-3xl pointer-events-none"></div>
+
+            <div class="relative z-10 flex flex-col md:flex-row md:items-center justify-between gap-6">
+                <div class="space-y-5 flex-grow">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/20 backdrop-blur-md text-xs font-semibold border border-white/30 text-white uppercase tracking-wider">
+                        <i class="fa-solid fa-gamepad"></i> Arcade Center
+                    </div>
+                    <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight leading-tight">
+                        Take a break. <br/> <span class="text-brand-100">Play something.</span>
+                    </h2>
+                    <p class="text-brand-50 text-base max-w-lg font-normal leading-relaxed">
+                        Kumpulan mini-games interaktif yang berjalan sepenuhnya di browser Anda. Pilih game, pecahkan rekor, dan bersantai!
+                    </p>
+                    
+                    <!-- SEARCH BAR -->
+                    <div class="relative max-w-md mt-4">
+                        <i class="fa-solid fa-search absolute left-4 top-1/2 transform -translate-y-1/2 text-slate-400"></i>
+                        <input type="text" id="arcade-search" placeholder="Cari nama game..." 
+                            class="w-full bg-white text-slate-800 rounded-xl py-3 pl-11 pr-4 focus:outline-none focus:ring-2 focus:ring-brand-300 shadow-lg text-sm font-medium transition-shadow placeholder:text-slate-400">
+                    </div>
+                </div>
+
+                <!-- STATS WIDGET -->
+                <div class="bg-white/10 backdrop-blur-md p-5 rounded-2xl border border-white/20 min-w-[200px] text-center shadow-lg">
+                    <h3 class="text-xs font-bold uppercase tracking-wider text-brand-200 mb-4">Your Arcade Stats</h3>
+                    <div class="space-y-3">
+                        <div>
+                            <span class="block text-2xl font-extrabold text-white" id="stat-played">0</span>
+                            <span class="text-[10px] text-slate-300 uppercase font-medium">Games Played</span>
+                        </div>
+                        <div class="border-t border-white/10 pt-3">
+                            <span class="block text-lg font-bold text-white" id="stat-unlocked">10 / 10</span>
+                            <span class="text-[10px] text-slate-300 uppercase font-medium">Unlocked</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- CATEGORIES FILTER -->
+        <div class="flex items-center gap-2 overflow-x-auto pb-2 hide-scrollbar">
+            <button onclick="filterArcade('All')" id="btn-filter-All" class="arcade-filter-btn active bg-brand-600 text-white px-5 py-2 rounded-xl text-xs sm:text-sm font-bold shadow-sm transition-all whitespace-nowrap">Semua Game</button>
+            <button onclick="filterArcade('Classic')" id="btn-filter-Classic" class="arcade-filter-btn bg-white text-slate-600 hover:bg-slate-50 px-5 py-2 rounded-xl text-xs sm:text-sm font-bold shadow-sm border border-slate-100 transition-all whitespace-nowrap">🕹 Classic</button>
+            <button onclick="filterArcade('Brain')" id="btn-filter-Brain" class="arcade-filter-btn bg-white text-slate-600 hover:bg-slate-50 px-5 py-2 rounded-xl text-xs sm:text-sm font-bold shadow-sm border border-slate-100 transition-all whitespace-nowrap">🧠 Brain</button>
+            <button onclick="filterArcade('Reaction')" id="btn-filter-Reaction" class="arcade-filter-btn bg-white text-slate-600 hover:bg-slate-50 px-5 py-2 rounded-xl text-xs sm:text-sm font-bold shadow-sm border border-slate-100 transition-all whitespace-nowrap">⚡ Reaction</button>
+            <button onclick="filterArcade('Casual')" id="btn-filter-Casual" class="arcade-filter-btn bg-white text-slate-600 hover:bg-slate-50 px-5 py-2 rounded-xl text-xs sm:text-sm font-bold shadow-sm border border-slate-100 transition-all whitespace-nowrap">🎯 Casual</button>
+        </div>
+
+        <!-- GAMES GRID -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6" id="arcade-grid">
+            <!-- Game Cards will be injected here via JS -->
+        </div>
+
+    </section>
+</main>
+
+<!-- GAME MODAL OVERLAY -->
+<div id="arcade-game-modal" class="fixed inset-0 z-50 hidden flex items-center justify-center bg-slate-900/80 backdrop-blur-md opacity-0 transition-opacity duration-300">
+    <div class="bg-white rounded-3xl w-full max-w-4xl mx-4 sm:mx-6 h-[85vh] flex flex-col shadow-2xl relative overflow-hidden transform scale-95 transition-transform duration-300" id="arcade-modal-content">
+        
+        <!-- HEADER -->
+        <div class="flex items-center justify-between px-6 py-4 border-b border-slate-100 bg-slate-50/50">
+            <div class="flex items-center gap-3">
+                <div id="modal-game-icon" class="w-10 h-10 rounded-xl bg-brand-100 text-brand-600 flex items-center justify-center text-xl shadow-inner">
+                    🎮
+                </div>
+                <div>
+                    <h3 id="modal-game-title" class="font-bold text-slate-900 text-lg">Game Title</h3>
+                    <p id="modal-game-category" class="text-[11px] font-semibold text-brand-600 uppercase tracking-wide">Category</p>
+                </div>
+            </div>
+            <button onclick="closeArcadeGame()" class="w-10 h-10 rounded-full bg-slate-200 hover:bg-slate-300 text-slate-600 flex items-center justify-center transition-colors">
+                <i class="fa-solid fa-xmark text-lg"></i>
+            </button>
+        </div>
+
+        <!-- GAME CONTAINER -->
+        <div id="modal-game-container" class="flex-grow relative bg-[#f8fafc] overflow-hidden flex items-center justify-center rounded-b-3xl">
+            <!-- Game Canvas or HTML will be mounted here -->
+            <div class="text-slate-400 animate-pulse text-sm font-semibold">Memuat game...</div>
+        </div>
+    </div>
+</div>
